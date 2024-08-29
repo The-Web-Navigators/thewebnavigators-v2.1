@@ -5,10 +5,12 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // Import your components
 import Home from './pages/Home';
 import { ThemeProvider } from './contexts/ThemeContext';
+import Header from './components/Header';
 
 function App() {
   return (
     <ThemeProvider>
+      <Header />
       <Router>
         <Routes>
           {/* Define routes */}
