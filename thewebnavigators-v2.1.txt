@@ -1,0 +1,19 @@
+thewebnavigators-v2.1
+│
+├── public
+│
+├── src
+│   ├── assets
+│   │   ├── css
+│   │   └── fonts
+│   ├── components
+|   ├── contexts
+│   ├── pages
+│   ├── App.js
+│   └── index.js
+│
+├── node_modules
+│
+├── .gitignore
+│
+└── package.json
