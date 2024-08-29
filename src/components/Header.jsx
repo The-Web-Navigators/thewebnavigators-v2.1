@@ -8,7 +8,7 @@ export default function Header() {
     return (
         <div className='w-full h-16 fixed z-50 backdrop-blur-[12px] bg-transparent'>
             <div className='container h-full mx-auto px-2 py-2 xl:px-0 flex items-center justify-between'>
-                <Link href='/' target='_self' id='company-logo' className='inline-flex items-center gap-2 text-primary-dark dark:text-primary-light'>
+                <Link to='/' target='_self' id='company-logo' className='inline-flex items-center gap-2 text-primary-dark dark:text-primary-light'>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="26"
