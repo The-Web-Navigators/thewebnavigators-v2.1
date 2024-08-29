@@ -3,72 +3,43 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   darkMode: 'class', // Use class-based dark mode
-  content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
-  ],
-  prefix: "",
+  content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
     extend: {
       fontFamily: {
         sans: ['Geist', ...defaultTheme.fontFamily.sans],
       },
       fontWeight: {
-        'ultralight': 100,
-        'light': 300,
-        'medium': 500,
-        'semibold': 600,
-        'bold': 700,
-        'ultrablack': 800,
+        thin: 100,      // Thin
+        extraLight: 200, // UltraLight
+        light: 300,     // Light
+        medium: 500,    // Medium
+        semiBold: 600,  // SemiBold
+        bold: 700,      // Bold
+        extraBold: 800, // UltraBlack
+        black: 900,     // UltraBlack
       },
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
+        // Light Theme Colors
+        'primary-light': '#ffffff', // Light background
+        'secondary-light': '#f0f0f0', // Slightly darker than primary
+        'tertiary-light': '#e0e0e0', // Even darker
+        'accent-light': '#007bff', // Accent color (e.g., blue)
+        'text-light': '#000000', // Main text color
+
+        // Dark Theme Colors
+        'primary-dark': '#000000', // Dark background
+        'secondary-dark': '#1a1a1a', // Slightly lighter than primary
+        'tertiary-dark': '#333333', // Even lighter
+        'accent-dark': '#ff5722', // Accent color (e.g., orange)
+        'text-dark': '#ffffff', // Main text color
       },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+      animation: {
+        gradient: "gradient 8s linear infinite",
+        grid: "grid 15s linear infinite",
+        "spin-around": "spin-around calc(var(--speed) * 2) infinite linear",
+        slide: "slide var(--speed) ease-in-out infinite alternate",
+        meteor: "meteor 5s linear infinite",
       },
       keyframes: {
         gradient: {
@@ -76,21 +47,39 @@ module.exports = {
             backgroundPosition: "var(--bg-size) 0",
           },
         },
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
+        grid: {
+          "0%": { transform: "translateY(-50%)" },
+          "100%": { transform: "translateY(0)" },
         },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+        "spin-around": {
+          "0%": {
+            transform: "translateZ(0) rotate(0)",
+          },
+          "15%, 35%": {
+            transform: "translateZ(0) rotate(90deg)",
+          },
+          "65%, 85%": {
+            transform: "translateZ(0) rotate(270deg)",
+          },
+          "100%": {
+            transform: "translateZ(0) rotate(360deg)",
+          },
         },
-      },
-      animation: {
-        gradient: "gradient 8s linear infinite",
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        slide: {
+          to: {
+            transform: "translate(calc(100cqw - 100%), 0)",
+          },
+        },
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: 1 },
+          "70%": { opacity: 1 },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: 0,
+          },
+        },
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [],
 }

@@ -10,8 +10,8 @@ import Header from './components/Header';
 function App() {
   return (
     <ThemeProvider>
-      <Header />
-      <Router>
+      <Router basename="/">
+        <Header />
         <Routes>
           {/* Define routes */}
           <Route path="/" element={<Home />} />
