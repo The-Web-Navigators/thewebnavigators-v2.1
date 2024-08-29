@@ -35,7 +35,13 @@ export const ThemeProvider = ({ children }) => {
 
     // Apply the theme class to the body element
     useEffect(() => {
-        document.body.classList.toggle('dark', isDarkMode);
+        if (isDarkMode) {
+            document.body.classList.add('dark');
+            document.body.classList.remove('light');
+        } else {
+            document.body.classList.add('light');
+            document.body.classList.remove('dark');
+        }
     }, [isDarkMode]);
 
     return (

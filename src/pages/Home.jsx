@@ -38,7 +38,7 @@ export default function Home() {
   const { isDarkMode, toggleTheme } = useTheme();
 
   return (
-    <main className='mx-auto flex-1 overflow-hidden bg-primary-light dark:bg-primary-dark min-h-screen transition-colors ease-in-out duration-500'>
+    <main className='mx-auto flex-1 overflow-hidden  min-h-screen'>
       <section id='hero' className='relative'>
         <motion.div
           className="text-lg tracking-tight text-gray-400 md:text-xl text-balance"
