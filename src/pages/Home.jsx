@@ -8,6 +8,7 @@ import { useTheme } from '../contexts/ThemeContext';
 import RetroGrid from "../components/magicui/retro-grid";
 import Meteors from "../components/magicui/meteors";
 import Marquee from "../components/magicui/marquee";
+import AvatarCircles from "../components/magicui/avatar-circles";
 
 
 // Import Components
@@ -95,15 +96,23 @@ const showcaseItems = [
     // Add more items here
 ];
 
+
+const avatarUrls = [
+    "https://avatars.githubusercontent.com/u/16860528",
+    "https://avatars.githubusercontent.com/u/20110627",
+    "https://avatars.githubusercontent.com/u/106103625",
+    "https://avatars.githubusercontent.com/u/59228569",
+];
+
 export default function Home() {
     const { isDarkMode, toggleTheme } = useTheme();
 
     return (
         <main className='mx-auto flex-1 min-h-screen'>
-            <section id='hero' className='relative pt-32 mx-auto h-screen px-6 text-center md:px-8 flex flex-col items-center gap-6 overflow-hidden'>
+            <section id='hero' className='relative pt-32 mx-auto h-screen px-6 text-center md:px-8 flex flex-col items-center overflow-hidden'>
                 <motion.div
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+                    animate={{ opacity: 1 }}
                     transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}>
                     <AnimatedGradientTextComponent text="The Web Navigators" />
                 </motion.div>
@@ -111,7 +120,7 @@ export default function Home() {
                 <motion.h1
                     className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 text-5xl font-medium leading-none tracking-tighter text-transparent sm:text-6xl md:text-7xl lg:text-8xl"
                     initial={{ opacity: 0, y: -50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ ease: "easeInOut", duration: 1, delay: 0.2 }}>
                     Navigating the Web’s
                     <br className="hidden md:block" />{" "}
@@ -121,21 +130,23 @@ export default function Home() {
                 <motion.p
                     className="text-lg tracking-tight text-gray-400 md:text-xl text-balance"
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+                    animate={{ opacity: 1 }}
                     transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}>
-                    We help businesses and individuals develop web applications<br className="hidden md:block" /> tailored to their unique needs.
+                    We help businesses and individuals develop web applications
+                    <br className="hidden md:block" /> tailored to their unique needs.
                 </motion.p>
 
                 <motion.div
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+                    animate={{ opacity: 1 }}
                     transition={{ ease: "easeInOut", duration: 1, delay: 0.8 }}>
-                    <ShimmerButtonComponent buttonText="Get Started" onClick={toggleTheme} />
+                    <AvatarCircles className="mt-4" numPeople={99} avatarUrls={avatarUrls} />
+                    <ShimmerButtonComponent className="mt-4" buttonText="Get Started" onClick={toggleTheme} />
                 </motion.div>
 
                 <motion.div
                     initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
+                    animate={{ opacity: 1 }}
                     transition={{ ease: "easeInOut", duration: 1, delay: 0.8 }}>
                     <Meteors number={10} />
                 </motion.div>
