@@ -34,16 +34,13 @@ const files = [
 const features = [
   {
     Icon: FileTextIcon,
-    name: "Save your files",
-    description: "We automatically save your files as you type.",
+    name: "Custom Solutions",
+    description: "Solutions crafted exclusively for your unique needs.",
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-1",
     background: (
-      <Marquee
-        pauseOnHover
-        className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] "
-      >
+      <Marquee pauseOnHover className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] ">
         {files.map((f, idx) => (
           <figure
             key={idx}
@@ -69,8 +66,8 @@ const features = [
   },
   {
     Icon: BellIcon,
-    name: "Notifications",
-    description: "Get notified when something happens.",
+    name: "Real-Time",
+    description: "We build responsive, real-time web applications that keep you connected and informed instantly.",
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
@@ -81,7 +78,7 @@ const features = [
   {
     Icon: Share2Icon,
     name: "Integrations",
-    description: "Supports 100+ integrations and counting.",
+    description: "Seamless API integration for smooth service connectivity.",
     href: "#",
     cta: "Learn more",
     className: "col-span-3 lg:col-span-2",
