@@ -11,6 +11,7 @@ import ShimmerButton from "../components/magicui/shimmer-button";
 import Meteors from "../components/magicui/meteors";
 import TextReveal from "../components/magicui/text-reveal";
 import Marquee from "../components/magicui/marquee";
+import { BentoGridComponent } from '../components/react/BentoGridComponent';
 
 
 const AnimatedGradientButton = () => {
@@ -190,7 +191,7 @@ export default function Home() {
       </section>
 
       <section className='container mx-auto'>
-       
+        <BentoGridComponent />
       </section>
 
       <section id='text-reveal' className='z-10 flex min-h-[16rem] items-center justify-center rounded-lg bg-white dark:bg-black'>
