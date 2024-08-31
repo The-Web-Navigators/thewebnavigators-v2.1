@@ -111,7 +111,7 @@ export default function Home() {
 
     return (
         <main className='mx-auto flex-1 min-h-screen'>
-            <section id='hero' className='relative pt-32 mx-auto h-screen px-6 text-center md:px-8 flex flex-col items-center overflow-hidden'>
+            <section id='hero' className='relative pt-32 mx-auto h-screen px-6 md:px-8 flex flex-col items-center overflow-hidden'>
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -120,7 +120,7 @@ export default function Home() {
                 </motion.div>
 
                 <motion.h1
-                    className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 text-5xl font-medium leading-none tracking-tighter text-transparent sm:text-6xl md:text-7xl lg:text-8xl"
+                    className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 text-5xl font-medium leading-none tracking-tighter text-transparent text-center sm:text-6xl md:text-7xl lg:text-8xl"
                     initial={{ opacity: 0, y: -50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ ease: "easeInOut", duration: 1, delay: 0.2 }}>
@@ -130,7 +130,7 @@ export default function Home() {
                 </motion.h1>
 
                 <motion.p
-                    className="text-lg tracking-tight text-gray-400 md:text-xl text-balance"
+                    className="text-lg tracking-tight text-gray-400 md:text-xl text-balance text-center"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}>
@@ -190,31 +190,27 @@ export default function Home() {
                 <RetroGrid className='-z-10' />
             </section>
 
-            <section id="clients" className="mx-auto max-w-[80rem] px-6 text-center md:px-8">
-                <div className="py-14">
-                    <div className="mx-auto max-w-screen-xl px-4 md:px-8">
-                        <h2 className="text-sm font-semibold text-gray-600">TRUSTED BY TEAMS FROM AROUND THE WORLD</h2>
-                        <div className="mt-6">
-                            <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16 [&_path]:fill-white">
-                                <li><img src="https://cdn.magicui.design/companies/Google.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
-                                <li><img src="https://cdn.magicui.design/companies/Microsoft.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
-                                <li><img src="https://cdn.magicui.design/companies/GitHub.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
-                                <li><img src="https://cdn.magicui.design/companies/Uber.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
-                                <li><img src="https://cdn.magicui.design/companies/Notion.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
-                            </ul>
-                        </div>
-                    </div>
+            <section id="clients" className="container mx-auto px-6 md:px-8">
+                <h2 className="text-sm font-semibold text-gray-600 text-center">TRUSTED BY TEAMS FROM AROUND THE WORLD</h2>
+                <div className="mt-6">
+                    <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16 [&_path]:fill-white">
+                        <li><img src="https://cdn.magicui.design/companies/Google.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
+                        <li><img src="https://cdn.magicui.design/companies/Microsoft.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
+                        <li><img src="https://cdn.magicui.design/companies/GitHub.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
+                        <li><img src="https://cdn.magicui.design/companies/Uber.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
+                        <li><img src="https://cdn.magicui.design/companies/Notion.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
+                    </ul>
                 </div>
             </section>
 
-            <section id="showcase" className="py-14">
-                <h2 className="mb-2 text-center text-5xl font-bold leading-[1.2] tracking-tighter text-primary-dark">
+            <section id="showcase" className='mt-32'>
+                <h2 className="text-center text-5xl font-bold leading-[1.2] tracking-tighter text-primary-dark">
                     Showcase
                 </h2>
-                <h3 className="mx-auto mb-8 text-balance text-center text-lg font-medium tracking-tight text-primary-dark/80">
+                <h3 className="mt-2 mx-auto text-balance text-center text-lg font-medium tracking-tight text-primary-dark/80">
                     Companies choose Magic UI to build their landing pages.
                 </h3>
-                <div className="relative flex flex-col">
+                <div className="mt-8 relative flex flex-col">
                     <div className="group flex overflow-hidden p-2 flex-row max-w-screen">
                         <div className="flex shrink-0 justify-around flex-row">
                             <Marquee pauseOnHover className="[--duration:20s]">
@@ -264,11 +260,11 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className='container mx-auto'>
+            <section className='mt-32 container mx-auto px-6 md:px-8'>
                 <BentoGridComponent />
             </section>
 
-            <section id='testimonials' className='container mx-auto py-14'>
+            <section id='testimonials' className='mt-32 container mx-auto px-6 md:px-8'>
                 <h2 className="mb-4 text-center text-5xl font-bold leading-[1.2] tracking-tighter text-primary-dark dark:text-primary-light">What People Are Saying</h2>
                 <h3 className="mx-auto mb-8 max-w-lg text-balance text-center text-lg font-normal tracking-tight text-primary-dark/70">Don't just take our word for it. Here's what <strong>real people</strong> are saying about our work.</h3>
                 <MarqueeComponent items={reviews} />
