@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8c62ccda.css",
-    "main.js": "/static/js/main.01f006fe.js",
+    "main.js": "/static/js/main.a2b55113.js",
     "static/media/Geist-Black.woff": "/static/media/Geist-Black.bd45a4d39e1db1f43ea4.woff",
     "static/media/Geist-UltraBlack.woff": "/static/media/Geist-UltraBlack.0b1e223db8daabcd712c.woff",
     "static/media/Geist-Bold.woff": "/static/media/Geist-Bold.9b47f4f8d9c26f7c1eec.woff",
@@ -21,10 +21,10 @@
     "static/media/Geist-Thin.woff2": "/static/media/Geist-Thin.9502065620edc1ae9143.woff2",
     "index.html": "/index.html",
     "main.8c62ccda.css.map": "/static/css/main.8c62ccda.css.map",
-    "main.01f006fe.js.map": "/static/js/main.01f006fe.js.map"
+    "main.a2b55113.js.map": "/static/js/main.a2b55113.js.map"
   },
   "entrypoints": [
     "static/css/main.8c62ccda.css",
-    "static/js/main.01f006fe.js"
+    "static/js/main.a2b55113.js"
   ]
 }
