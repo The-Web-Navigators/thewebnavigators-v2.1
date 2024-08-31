@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/thewebnavigators-v2.1/static/css/main.9fd14a41.css",
+    "main.js": "/thewebnavigators-v2.1/static/js/main.01f006fe.js",
+    "static/media/Geist-Black.woff": "/thewebnavigators-v2.1/static/media/Geist-Black.bd45a4d39e1db1f43ea4.woff",
+    "static/media/Geist-UltraBlack.woff": "/thewebnavigators-v2.1/static/media/Geist-UltraBlack.0b1e223db8daabcd712c.woff",
+    "static/media/Geist-Bold.woff": "/thewebnavigators-v2.1/static/media/Geist-Bold.9b47f4f8d9c26f7c1eec.woff",
+    "static/media/Geist-Medium.woff": "/thewebnavigators-v2.1/static/media/Geist-Medium.1993630567701d8dc54d.woff",
+    "static/media/Geist-SemiBold.woff": "/thewebnavigators-v2.1/static/media/Geist-SemiBold.cb8dd1bc648a553465cb.woff",
+    "static/media/Geist-Light.woff": "/thewebnavigators-v2.1/static/media/Geist-Light.6de95041923ff0d750df.woff",
+    "static/media/Geist-UltraLight.woff": "/thewebnavigators-v2.1/static/media/Geist-UltraLight.a7db17b6f083ed33e82d.woff",
+    "static/media/Geist-Regular.woff": "/thewebnavigators-v2.1/static/media/Geist-Regular.694b2a6a675b645b8bd4.woff",
+    "static/media/Geist-Thin.woff": "/thewebnavigators-v2.1/static/media/Geist-Thin.c5e045d90637d4bd3098.woff",
+    "static/media/Geist-UltraBlack.woff2": "/thewebnavigators-v2.1/static/media/Geist-UltraBlack.f245ef78486ec497d35d.woff2",
+    "static/media/Geist-Bold.woff2": "/thewebnavigators-v2.1/static/media/Geist-Bold.f05ae9735ee0220d9047.woff2",
+    "static/media/Geist-Medium.woff2": "/thewebnavigators-v2.1/static/media/Geist-Medium.a30e010abbdf695b47e0.woff2",
+    "static/media/Geist-SemiBold.woff2": "/thewebnavigators-v2.1/static/media/Geist-SemiBold.c7531cc0fd2bba703c8c.woff2",
+    "static/media/Geist-Regular.woff2": "/thewebnavigators-v2.1/static/media/Geist-Regular.b0af001684e455e74531.woff2",
+    "static/media/Geist-UltraLight.woff2": "/thewebnavigators-v2.1/static/media/Geist-UltraLight.c128fcaa2c4cc8715e2b.woff2",
+    "static/media/Geist-Light.woff2": "/thewebnavigators-v2.1/static/media/Geist-Light.bd3f2e449e1ea178c43e.woff2",
+    "static/media/Geist-Thin.woff2": "/thewebnavigators-v2.1/static/media/Geist-Thin.9502065620edc1ae9143.woff2",
+    "index.html": "/thewebnavigators-v2.1/index.html",
+    "main.9fd14a41.css.map": "/thewebnavigators-v2.1/static/css/main.9fd14a41.css.map",
+    "main.01f006fe.js.map": "/thewebnavigators-v2.1/static/js/main.01f006fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9fd14a41.css",
+    "static/js/main.01f006fe.js"
+  ]
+}
