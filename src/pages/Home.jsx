@@ -190,8 +190,8 @@ export default function Home() {
                 <RetroGrid className='-z-10' />
             </section>
 
-            <section id="clients" className="container mx-auto px-6 md:px-8">
-                <h2 className="text-sm font-semibold text-gray-600 text-center">TRUSTED BY TEAMS FROM AROUND THE WORLD</h2>
+            <section id="clients" className="mt-32 container mx-auto px-6 md:px-8">
+                <h2 className="text-sm font-semibold text-gray-400 text-center">TRUSTED BY TEAMS FROM AROUND THE WORLD</h2>
                 <div className="mt-6">
                     <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16 [&_path]:fill-white">
                         <li><img src="https://cdn.magicui.design/companies/Google.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
@@ -204,10 +204,10 @@ export default function Home() {
             </section>
 
             <section id="showcase" className='mt-32'>
-                <h2 className="text-center text-5xl font-bold leading-[1.2] tracking-tighter text-primary-dark">
+                <h2 className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 text-5xl font-medium leading-none tracking-tighter text-transparent text-center sm:text-5xl md:text-6xl lg:text-7xl">
                     Showcase
                 </h2>
-                <h3 className="mt-2 mx-auto text-balance text-center text-lg font-medium tracking-tight text-primary-dark/80">
+                <h3 className="mt-2 text-lg tracking-tight text-gray-400 md:text-xl text-balance text-center">
                     Companies choose Magic UI to build their landing pages.
                 </h3>
                 <div className="mt-8 relative flex flex-col">
@@ -265,8 +265,8 @@ export default function Home() {
             </section>
 
             <section id='testimonials' className='mt-32 container mx-auto px-6 md:px-8'>
-                <h2 className="mb-4 text-center text-5xl font-bold leading-[1.2] tracking-tighter text-primary-dark dark:text-primary-light">What People Are Saying</h2>
-                <h3 className="mx-auto mb-8 max-w-lg text-balance text-center text-lg font-normal tracking-tight text-primary-dark/70">Don't just take our word for it. Here's what <strong>real people</strong> are saying about our work.</h3>
+                <h2 className="mb-4 text-5xl font-bold leading-[1.2] bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 tracking-tighter text-transparent text-center">What People Are Saying</h2>
+                <h3 className="mx-auto mb-8 max-w-lg text-balance text-center text-lg font-normal tracking-tight text-gray-400">Don't just take our word for it. Here's what <strong>real people</strong> are saying about our work.</h3>
                 <MarqueeComponent items={reviews} />
             </section>
 
