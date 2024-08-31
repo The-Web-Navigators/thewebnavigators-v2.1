@@ -16,7 +16,6 @@ import { AnimatedGradientTextComponent } from '../components/react/AnimatedGradi
 import { ShimmerButtonComponent } from '../components/react/ShimmerButtonComponent';
 import { MarqueeComponent } from '../components/react/MarqueeComponent';
 import { BentoGridComponent } from '../components/react/BentoGridComponent';
-import { TextRevealComponent } from '../components/react/TextRevealComponent';
 import { Link } from 'react-router-dom';
 import { NumberTickerComponent } from '../components/react/NumberTickerComponent';
 
@@ -107,7 +106,7 @@ const avatarUrls = [
 ];
 
 export default function Home() {
-    const { isDarkMode, toggleTheme } = useTheme();
+    const { toggleTheme } = useTheme();
 
     return (
         <main className='mx-auto flex-1 min-h-screen'>
