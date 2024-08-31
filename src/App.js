@@ -10,7 +10,7 @@ import Header from './components/Header';
 function App() {
   return (
     <ThemeProvider>
-      <Router basename="/">
+      <Router basename="/thewebnavigators-v2.1">
         <Header />
         <Routes>
           {/* Define routes */}
