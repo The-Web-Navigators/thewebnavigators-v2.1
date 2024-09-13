@@ -3,6 +3,7 @@ import { BellIcon, Share2Icon } from "lucide-react";
 
 import { cn } from "../../lib/utils";
 import { AnimatedBeamMultipleOutput } from "../examples/animated-beam-multiple-outputs";
+import { FileTreeComponent } from "./FileTreeComponent";
 import { BentoCard, BentoGrid } from "../magicui/bento-grid";
 import Marquee from "../magicui/marquee";
 import { AnimatedListDemo } from "../examples/animated-list";
@@ -33,16 +34,16 @@ const techStackFiles = [
 const features = [
   {
     Icon: FileTextIcon,
-    name: "Tech Stack",
-    description: "We use React, Tailwind, Node.js, MySQL, and Firebase for scalable web apps.",
+    name: "Design & Code",
+    description: "Craft scalable web apps using React, Tailwind, and more.",
     href: "#",
-    cta: "Learn more",
+    cta: "Discover More",
     className: "col-span-3 lg:col-span-1",
     background: (
       <Marquee pauseOnHover className="absolute top-10 [--duration:20s] [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)]">
-        {techStackFiles.map((f, idx) => (
+        {techStackFiles.map((file, index) => (
           <figure
-            key={idx}
+            key={index}
             className={cn("relative w-32 cursor-pointer overflow-hidden rounded-xl border p-4",
               "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
               "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
@@ -51,11 +52,11 @@ const features = [
             <div className="flex flex-row items-center gap-2">
               <div className="flex flex-col">
                 <figcaption className="text-sm font-medium dark:text-white">
-                  {f.name}
+                  {file.name}
                 </figcaption>
               </div>
             </div>
-            <blockquote className="mt-2 text-xs dark:text-white">{f.body}</blockquote>
+            <blockquote className="mt-2 text-xs dark:text-white">{file.body}</blockquote>
           </figure>
         ))}
       </Marquee>
@@ -63,10 +64,10 @@ const features = [
   },
   {
     Icon: BellIcon,
-    name: "Real-Time Apps",
-    description: "Build responsive apps that keep you updated instantly.",
+    name: "Live Updates",
+    description: "Build responsive apps with real-time updates for users.",
     href: "#",
-    cta: "Learn more",
+    cta: "Discover More",
     className: "col-span-3 lg:col-span-2",
     background: (
       <AnimatedListDemo className="absolute -right-28 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
@@ -74,10 +75,10 @@ const features = [
   },
   {
     Icon: Share2Icon,
-    name: "Integrations",
-    description: "Effortless API integration for seamless connectivity.",
+    name: "API Integrations",
+    description: "Thousands of API integrations—name it, we handle it.",
     href: "#",
-    cta: "Learn more",
+    cta: "Discover More",
     className: "col-span-3 lg:col-span-2",
     background: (
       <AnimatedBeamMultipleOutput className="absolute right-2 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
@@ -85,14 +86,18 @@ const features = [
   },
   {
     Icon: CalendarIcon,
-    name: "Advanced Analytics",
-    description: "Get insights and optimize operations with advanced analytics.",
+    name: "Code Refactor",
+    description: "",
     href: "#",
-    cta: "Learn more",
+    cta: "Discover More",
     className: "col-span-3 lg:col-span-1",
-    background: "",
+    background: (
+      <FileTreeComponent />
+    ),
   },
 ];
+
+
 
 export function BentoGridComponent() {
   return (

@@ -278,6 +278,18 @@ export default function Home() {
                 </div>
             </section>
 
+            <section className='mt-32 container mx-auto px-6 md:px-8'>
+                <h2 className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 text-5xl font-medium leading-none tracking-tighter text-transparent text-center sm:text-5xl md:text-6xl lg:text-7xl">
+                    What We Do?
+                </h2>
+                <h3 className="mt-2 text-lg tracking-tight text-gray-400 md:text-xl text-balance text-center">
+                    Companies choose Magic UI to build their landing pages.
+                </h3>
+                <div className="mt-8">
+                    <BentoGridComponent />
+                </div>
+            </section>
+
             <section id="showcase" className='mt-32'>
                 <h2 className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 text-5xl font-medium leading-none tracking-tighter text-transparent text-center sm:text-5xl md:text-6xl lg:text-7xl">
                     Showcase
@@ -333,10 +345,6 @@ export default function Home() {
                     <div className="pointer-events-none absolute inset-y-0 left-0 h-full w-1/6 bg-gradient-to-r from-primary-light dark:from-primary-dark"></div>
                     <div className="pointer-events-none absolute inset-y-0 right-0 h-full w-1/5 bg-gradient-to-l from-primary-light dark:from-primary-dark"></div>
                 </div>
-            </section>
-
-            <section className='mt-32 container mx-auto px-6 md:px-8'>
-                <BentoGridComponent />
             </section>
 
             <section id='testimonials' className='mt-32 px-6'>
