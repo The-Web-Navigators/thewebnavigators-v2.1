@@ -181,7 +181,7 @@ export default function Home() {
                     <ShimmerButtonComponent className="px-8 py-4" buttonText="Get Started" onClick={toggleTheme} />
                     <Link to="/" className="px-8 py-4 rounded-full text-primary-dark dark:text-primary-light bg-secondary-light dark:bg-secondary-dark whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight inline-flex items-center gap-1">
                         Browse Projects
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1"><path d="m9 18 6-6-6-6"></path></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1"><path d="m9 18 6-6-6-6"></path></svg>
                     </Link>
                 </motion.div>
 
@@ -206,7 +206,7 @@ export default function Home() {
                             </svg>
                             <span className="ml-2 text-base font-bold text-tertiary-dark dark:text-tertiary-light">5.0</span>
                         </div>
-                        <div class="inline-flex items-center text-xs text-tertiary-dark dark:text-tertiary-light">
+                        <div className="inline-flex items-center text-xs text-tertiary-dark dark:text-tertiary-light">
                             <span className='whitespace-pre-wrap font-extrabold tracking-tighter'>
                                 <NumberTickerComponent value="30" />
                             </span>

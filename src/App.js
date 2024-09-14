@@ -5,9 +5,10 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // Import your components
 import Home from './pages/Home';
 import { ThemeProvider } from './contexts/ThemeContext';
-import Header from './components/Header';
+import Header from './components/react/Header';
 import WhatWeDo from './pages/WhatWeDo';
 import Portfolio from './pages/Portfolio';
+import Footer from './components/react/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/blogs" element={<Home />} />
           {/* Add more routes as needed */}
         </Routes>
+        <Footer/>
       </Router>
     </ThemeProvider>
   );

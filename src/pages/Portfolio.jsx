@@ -63,7 +63,7 @@ function Portfolio() {
   );
 
   return (
-    <section id="portfolio" className="mt-32 container mx-auto px-6 md:px-8">
+    <section id="portfolio" className="mt-32">
       <h2 className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-center py-2 text-5xl font-medium text-transparent tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
         Portfolio
       </h2>
@@ -81,7 +81,7 @@ function Portfolio() {
           <div className="pointer-events-none absolute inset-y-0 right-0 h-full w-1/5 bg-gradient-to-l from-primary-light dark:from-primary-dark"></div>
         </div>
       ) : (
-        <div className="mt-8 grid grid-cols-3 gap-6 container mx-auto">
+        <div className="mt-8 grid grid-cols-2 xl:grid-cols-3 gap-6 container mx-auto px-6 md:px-8">
           {portfolioItems.map(renderPortfolioItem)}
         </div>
       )}
