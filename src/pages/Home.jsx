@@ -9,7 +9,7 @@ import { useTheme } from '../contexts/ThemeContext';
 // Magic UI Components
 import RetroGrid from "../components/magicui/retro-grid";
 import Meteors from "../components/magicui/meteors";
-import Marquee from "../components/magicui/marquee";
+
 import AvatarCircles from "../components/magicui/avatar-circles";
 
 
@@ -20,53 +20,13 @@ import { MarqueeComponent } from '../components/react/MarqueeComponent';
 import { BentoGridComponent } from '../components/react/BentoGridComponent';
 import { Link } from 'react-router-dom';
 import { NumberTickerComponent } from '../components/react/NumberTickerComponent';
-
+import Portfolio from "./Portfolio";
 
 const avatarUrls = [
     "https://avatars.githubusercontent.com/u/16860528",
     "https://avatars.githubusercontent.com/u/20110627",
     "https://avatars.githubusercontent.com/u/106103625",
     "https://avatars.githubusercontent.com/u/59228569",
-];
-
-// Showcase Items
-const showcaseItems = [
-    {
-        href: '/showcase/aomni',
-        imgSrc: 'https://magicui.design/showcase/aomni.png',
-        alt: 'aomni.com',
-        title: 'aomni.com',
-        description: 'Raised seed round from notable investors.',
-    },
-    {
-        href: '/showcase/aomni',
-        imgSrc: 'https://magicui.design/showcase/cognosys.png',
-        alt: 'aomni.com',
-        title: 'aomni.com',
-        description: 'Raised seed round from notable investors.',
-    },
-    {
-        href: '/showcase/aomni',
-        imgSrc: 'https://magicui.design/showcase/infisical.png',
-        alt: 'aomni.com',
-        title: 'aomni.com',
-        description: 'Raised seed round from notable investors.',
-    },
-    {
-        href: '/showcase/aomni',
-        imgSrc: 'https://magicui.design/showcase/llmreport.png',
-        alt: 'aomni.com',
-        title: 'aomni.com',
-        description: 'Raised seed round from notable investors.',
-    },
-    {
-        href: '/showcase/aomni',
-        imgSrc: 'https://magicui.design/showcase/zen-browser.png',
-        alt: 'aomni.com',
-        title: 'aomni.com',
-        description: 'Raised seed round from notable investors.',
-    },
-    // Add more items here
 ];
 
 // Reviews
@@ -185,7 +145,7 @@ export default function Home() {
     const { toggleTheme } = useTheme();
 
     return (
-        <main className='mx-auto flex-1 min-h-screen'>
+        <main>
             <section id='hero' className='relative pt-32 mx-auto h-screen px-6 md:px-8 flex flex-col items-center overflow-hidden'>
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -290,62 +250,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section id="showcase" className='mt-32'>
-                <h2 className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 text-5xl font-medium leading-none tracking-tighter text-transparent text-center sm:text-5xl md:text-6xl lg:text-7xl">
-                    Showcase
-                </h2>
-                <h3 className="mt-2 text-lg tracking-tight text-gray-400 md:text-xl text-balance text-center">
-                    Companies choose Magic UI to build their landing pages.
-                </h3>
-                <div className="mt-8 relative flex flex-col">
-                    <div className="group flex overflow-hidden p-2 flex-row max-w-screen">
-                        <div className="flex shrink-0 justify-around flex-row">
-                            <Marquee pauseOnHover className="[--duration:20s]">
-                                {showcaseItems.map((item, index) => (
-                                    <a
-                                        key={index}
-                                        className="flex flex-col gap-2 group relative overflow-hidden cursor-pointer"
-                                        href={item.href}
-                                    >
-                                        <img
-                                            src={item.imgSrc}
-                                            alt={item.alt}
-                                            width="500"
-                                            height="300"
-                                            className="size-full object-cover max-h-[300px] rounded-xl"
-                                        />
-                                        <div className="flex flex-col">
-                                            <div className="group inline-flex cursor-pointer items-center justify-start gap-1 duration-200 hover:text-neutral-700 dark:hover:text-neutral-200 text-xl font-semibold text-neutral-700 dark:text-neutral-300">
-                                                {item.title}
-                                                <svg
-                                                    width="15"
-                                                    height="15"
-                                                    viewBox="0 0 15 15"
-                                                    fill="currentColor"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                    className="size-4 translate-x-0 opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100"
-                                                >
-                                                    <path
-                                                        d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z"
-                                                        fill="currentColor"
-                                                        fillRule="evenodd"
-                                                        clipRule="evenodd"
-                                                    ></path>
-                                                </svg>
-                                            </div>
-                                            <p className="text-neutral-400 text-sm">
-                                                {item.description}
-                                            </p>
-                                        </div>
-                                    </a>
-                                ))}
-                            </Marquee>
-                        </div>
-                    </div>
-                    <div className="pointer-events-none absolute inset-y-0 left-0 h-full w-1/6 bg-gradient-to-r from-primary-light dark:from-primary-dark"></div>
-                    <div className="pointer-events-none absolute inset-y-0 right-0 h-full w-1/5 bg-gradient-to-l from-primary-light dark:from-primary-dark"></div>
-                </div>
-            </section>
+            <Portfolio />
 
             <section id='testimonials' className='mt-32 px-6'>
                 <h2 className="mb-4 text-5xl font-bold leading-[1.2] bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 tracking-tighter text-transparent text-center">What People Are Saying</h2>
