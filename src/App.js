@@ -9,21 +9,23 @@ import Header from './components/react/Header';
 import WhatWeDo from './pages/WhatWeDo';
 import Portfolio from './pages/Portfolio';
 import Footer from './components/react/Footer';
+import ScrollToTop from './ScrollToTop';
 
 function App() {
   return (
     <ThemeProvider>
       <Router basename="/thewebnavigators-v2.1">
-        <Header />
-        <Routes>
-          {/* Define routes */}
-          <Route path="/" element={<Home />} />
-          <Route path="/what-we-do" element={<WhatWeDo />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/blogs" element={<Home />} />
-          {/* Add more routes as needed */}
-        </Routes>
-        <Footer/>
+        <ScrollToTop/>
+          <Header />
+          <Routes>
+            {/* Define routes */}
+            <Route path="/" element={<Home />} />
+            <Route path="/what-we-do" element={<WhatWeDo />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/blogs" element={<Home />} />
+            {/* Add more routes as needed */}
+          </Routes>
+          <Footer />=
       </Router>
     </ThemeProvider>
   );
