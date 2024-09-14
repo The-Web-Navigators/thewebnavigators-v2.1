@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/thewebnavigators-v2.1/static/css/main.3421c943.css",
-    "main.js": "/thewebnavigators-v2.1/static/js/main.7ba52195.js",
+    "main.css": "/thewebnavigators-v2.1/static/css/main.cfdad7a7.css",
+    "main.js": "/thewebnavigators-v2.1/static/js/main.a697adc4.js",
     "static/media/Geist-Black.woff": "/thewebnavigators-v2.1/static/media/Geist-Black.bd45a4d39e1db1f43ea4.woff",
     "static/media/Geist-UltraBlack.woff": "/thewebnavigators-v2.1/static/media/Geist-UltraBlack.0b1e223db8daabcd712c.woff",
     "static/media/Geist-Bold.woff": "/thewebnavigators-v2.1/static/media/Geist-Bold.9b47f4f8d9c26f7c1eec.woff",
@@ -20,11 +20,11 @@
     "static/media/Geist-Light.woff2": "/thewebnavigators-v2.1/static/media/Geist-Light.bd3f2e449e1ea178c43e.woff2",
     "static/media/Geist-Thin.woff2": "/thewebnavigators-v2.1/static/media/Geist-Thin.9502065620edc1ae9143.woff2",
     "index.html": "/thewebnavigators-v2.1/index.html",
-    "main.3421c943.css.map": "/thewebnavigators-v2.1/static/css/main.3421c943.css.map",
-    "main.7ba52195.js.map": "/thewebnavigators-v2.1/static/js/main.7ba52195.js.map"
+    "main.cfdad7a7.css.map": "/thewebnavigators-v2.1/static/css/main.cfdad7a7.css.map",
+    "main.a697adc4.js.map": "/thewebnavigators-v2.1/static/js/main.a697adc4.js.map"
   },
   "entrypoints": [
-    "static/css/main.3421c943.css",
-    "static/js/main.7ba52195.js"
+    "static/css/main.cfdad7a7.css",
+    "static/js/main.a697adc4.js"
   ]
 }
