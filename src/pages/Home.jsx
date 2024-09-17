@@ -256,7 +256,7 @@ export default function Home() {
 
                             </div>
                         </Link>
-                        <Link className="flex items-center gap-2">
+                        <Link to='https://sponsorpro-70d8f.web.app/' target="_blank" className="flex items-center gap-2">
                             <img src={SponsorProLogo} className="h-8" alt='' />
                             <span className="dark:text-primary-light">Sponsor<b>Pro</b></span>
                         </Link>
