@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/thewebnavigators-v2.1/static/css/main.6ea29cdb.css",
-    "main.js": "/thewebnavigators-v2.1/static/js/main.bff137d8.js",
+    "main.js": "/thewebnavigators-v2.1/static/js/main.89122e9c.js",
     "static/media/SponsorPro-logo.png": "/thewebnavigators-v2.1/static/media/SponsorPro-logo.a4924baf32e44cd17856.png",
     "static/media/Geist-Black.woff": "/thewebnavigators-v2.1/static/media/Geist-Black.bd45a4d39e1db1f43ea4.woff",
     "static/media/Geist-UltraBlack.woff": "/thewebnavigators-v2.1/static/media/Geist-UltraBlack.0b1e223db8daabcd712c.woff",
@@ -28,10 +28,10 @@
     "static/media/redwavevp-logo.png": "/thewebnavigators-v2.1/static/media/redwavevp-logo.ebd4fbd0edd5aace8eb1.png",
     "index.html": "/thewebnavigators-v2.1/index.html",
     "main.6ea29cdb.css.map": "/thewebnavigators-v2.1/static/css/main.6ea29cdb.css.map",
-    "main.bff137d8.js.map": "/thewebnavigators-v2.1/static/js/main.bff137d8.js.map"
+    "main.89122e9c.js.map": "/thewebnavigators-v2.1/static/js/main.89122e9c.js.map"
   },
   "entrypoints": [
     "static/css/main.6ea29cdb.css",
-    "static/js/main.bff137d8.js"
+    "static/js/main.89122e9c.js"
   ]
 }
