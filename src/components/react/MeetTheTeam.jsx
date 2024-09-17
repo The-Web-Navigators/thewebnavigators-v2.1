@@ -7,31 +7,31 @@ import Saurabh from '../../assets/images/saurabh.jpeg'
 const MeetTheTeam = () => {
     const teamMembers = [
         {
-            name: 'Jatin Dahiya',
-            role: 'Founder / Developer',
+            name: 'Jatin D.',
+            role: 'Founder',
             image: Jatin
         },
         {
-            name: 'Shubhangi Gupta',
+            name: 'Shubhangi',
             role: 'Developer',
             image: Shubhangi
         },
         {
-            name: 'Simran Ahitaan',
-            role: 'UI Designer',
+            name: 'Simran Ah.',
+            role: 'Developer',
             image: Simran
         },
         {
-            name: 'Saurabh Sharma',
-            role: 'Marketing Head',
+            name: 'Saurabh S.',
+            role: 'UI Designer',
             image: Saurabh
         }
     ];
 
     return (
-        <div className="mt-44 container mx-auto">
-            <div className="flex items-center justify-between gap-6">
-                <div className="w-1/2">
+        <div className="mt-44 container mx-auto px-6 md:px-8">
+            <div className="grid grid-cols-1 xl:grid-cols-2">
+                <div>
                     <h2 className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 text-3xl font-medium leading-none tracking-tighter text-transparent sm:text-3xl md:text-4xl lg:text-5xl">
                         Meet the team
                     </h2>
@@ -39,16 +39,16 @@ const MeetTheTeam = () => {
                         Meet the dedicated individuals who lead our team to success. Their expertise and leadership drive our company forward, ensuring that we deliver the best products and services to our customers.
                     </p>
                 </div>
-                <ul className="w-1/2 grid grid-cols-2 gap-x-8 gap-y-12">
+                <ul className="grid grid-cols-2 gap-x-8 gap-y-12">
                     {teamMembers.map((member, index) => (
                         <li key={index}>
                             <div className="flex items-center gap-x-6">
-                                <img className="h-16 w-16 rounded-full" src={member.image} alt={member.name} />
+                                <img className="h-10 w-10 xl:h-16 xl:w-16 rounded-full" src={member.image} alt={member.name} />
                                 <div>
-                                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900 dark:text-tertiary-light">
+                                    <h3 className="font-semibold leading-7 tracking-tight text-gray-900 text-sm xl:text-base dark:text-tertiary-light">
                                         {member.name}
                                     </h3>
-                                    <p className="text-sm font-semibold leading-6 text-indigo-600">
+                                    <p className="font-semibold leading-6 text-indigo-600 text-[11px] xl:text-sm">
                                         {member.role}
                                     </p>
                                 </div>

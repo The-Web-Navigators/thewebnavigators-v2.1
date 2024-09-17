@@ -22,6 +22,10 @@ import Portfolio from "./Portfolio";
 import WhatWeDo from "./WhatWeDo";
 import MeetTheTeam from "../components/react/MeetTheTeam";
 
+import RedWaveVPLogo from '../assets/images/redwavevp-logo.png';
+import JpLewisLogo from '../assets/images/jplewis-logo.jpeg';
+import SponsorProLogo from '../assets/images/SponsorPro-logo.png';
+
 const avatarUrls = [
     "https://avatars.githubusercontent.com/u/16860528",
     "https://avatars.githubusercontent.com/u/20110627",
@@ -226,15 +230,37 @@ export default function Home() {
             </section>
 
             <section id="clients" className="mt-32 container mx-auto px-6 md:px-8">
-                <h2 className="text-sm font-semibold text-gray-400 text-center">TRUSTED BY TEAMS FROM AROUND THE WORLD</h2>
+                <h2 className="text-sm font-semibold text-gray-400 text-center">TRUSTED BY CLIENTS FROM AROUND THE WORLD</h2>
                 <div className="mt-6">
-                    <ul className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16 [&_path]:fill-white">
-                        <li><img src="https://cdn.magicui.design/companies/Google.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
-                        <li><img src="https://cdn.magicui.design/companies/Microsoft.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
-                        <li><img src="https://cdn.magicui.design/companies/GitHub.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
-                        <li><img src="https://cdn.magicui.design/companies/Uber.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
-                        <li><img src="https://cdn.magicui.design/companies/Notion.svg" className="h-8 w-28 px-2 dark:brightness-0 dark:invert" alt='' /></li>
-                    </ul>
+                    <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16 [&_path]:fill-white">
+                        <Link to='https://guwi-dashboard-v2-1.vercel.app/' target="_blank" className="font-medium flex flex-col items-center">
+                            <div>
+                                <span className=" text-green-600">Gu</span>
+                                <span className="dark:text-primary-light">-Wi</span>
+                            </div>
+                            <span className="text-[8px] dark:text-primary-light">Gutters & Windows</span>
+                        </Link>
+                        <Link to='https://threadlab.com.au/' target="_blank" className="dark:text-primary-light"><span>Thread<b>Lab.</b></span></Link>
+                        <Link to='https://redwavevp.com/' target="_blank" className="flex items-center gap-2">
+                            <img src={RedWaveVPLogo} className="w-8" alt='' />
+                            <div className="flex flex-col text-[10px]">
+                                <span className="dark:text-primary-light uppercase">Redwave</span>
+                                <span className="dark:text-primary-light uppercase">Venture Partners</span>
+                            </div>
+                        </Link>
+                        <Link to='https://jplewisgroup.com/' target="_blank" className="flex items-center gap-2">
+                            <img src={JpLewisLogo} className="h-10 w-10 object-contain rounded-full" alt='' />
+                            <div className="flex flex-col text-[10px]">
+                                <span className="dark:text-primary-light uppercase">Jp Lewis Group</span>
+                                <span className="dark:text-primary-light uppercase">LLC</span>
+
+                            </div>
+                        </Link>
+                        <Link className="flex items-center gap-2">
+                            <img src={SponsorProLogo} className="h-8" alt='' />
+                            <span className="dark:text-primary-light">Sponsor<b>Pro</b></span>
+                        </Link>
+                    </div>
                 </div>
             </section>
 
