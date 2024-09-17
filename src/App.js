@@ -14,7 +14,7 @@ import ScrollToTop from './ScrollToTop';
 function App() {
   return (
     <ThemeProvider>
-      <Router basename="/thewebnavigators-v2.1">
+      <Router basename="/">
         <ScrollToTop/>
           <Header />
           <Routes>
