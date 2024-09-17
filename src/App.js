@@ -25,7 +25,7 @@ function App() {
             <Route path="/blogs" element={<Home />} />
             {/* Add more routes as needed */}
           </Routes>
-          <Footer />=
+          <Footer />
       </Router>
     </ThemeProvider>
   );

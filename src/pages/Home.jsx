@@ -12,15 +12,15 @@ import Meteors from "../components/magicui/meteors";
 
 import AvatarCircles from "../components/magicui/avatar-circles";
 
-
 // Import Components
 import { AnimatedGradientTextComponent } from '../components/react/AnimatedGradientTextComponent';
 import { ShimmerButtonComponent } from '../components/react/ShimmerButtonComponent';
 import { MarqueeComponent } from '../components/react/MarqueeComponent';
-import { BentoGridComponent } from '../components/react/BentoGridComponent';
 import { Link } from 'react-router-dom';
 import { NumberTickerComponent } from '../components/react/NumberTickerComponent';
 import Portfolio from "./Portfolio";
+import WhatWeDo from "./WhatWeDo";
+import MeetTheTeam from "../components/react/MeetTheTeam";
 
 const avatarUrls = [
     "https://avatars.githubusercontent.com/u/16860528",
@@ -238,21 +238,13 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className='mt-32 container mx-auto px-6 md:px-8'>
-                <h2 className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 text-5xl font-medium leading-none tracking-tighter text-transparent text-center sm:text-5xl md:text-6xl lg:text-7xl">
-                    What We Do?
-                </h2>
-                <h3 className="mt-2 text-lg tracking-tight text-gray-400 md:text-xl text-balance text-center">
-                    Companies choose Magic UI to build their landing pages.
-                </h3>
-                <div className="mt-8">
-                    <BentoGridComponent />
-                </div>
-            </section>
+            <WhatWeDo />
 
             <Portfolio />
 
-            <section id='testimonials' className='mt-32 px-6'>
+            <MeetTheTeam />
+
+            <section id='testimonials' className='mt-44 px-6'>
                 <h2 className="mb-4 text-5xl font-bold leading-[1.2] bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 tracking-tighter text-transparent text-center">What People Are Saying</h2>
                 <h3 className="mx-auto mb-8 max-w-lg text-balance text-center text-lg font-normal tracking-tight text-gray-400">Don't just take our word for it. Here's what <strong>real people</strong> are saying about our work.</h3>
                 <MarqueeComponent marqueeItems={reviewItems} />
