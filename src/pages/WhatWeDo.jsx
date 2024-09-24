@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { AnimatedBeamMultipleOutput } from "../components/examples/animated-beam-multiple-outputs";
-import { AnimatedListDemo } from "../components/examples/animated-list";
+import { AnimatedListComponent } from "../components/examples/animated-list";
 import { IconCloudComponent } from '../components/react/IconCloudComponent';
 import { OrbitingCirclesComponent } from '../components/react/OrbitingCirclesComponent';
 import { GlobeComponent } from '../components/react/GlobeComponent';
@@ -53,7 +53,7 @@ export default function WhatWeDo() {
       </div>
 
       <div className='w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24'>
-        <AnimatedListDemo className="border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
+        <AnimatedListComponent className="border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
         <div className='w-full flex flex-col justify-center'>
           <motion.h2
             className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-5xl font-medium leading-none tracking-tighter text-transparent sm:text-5xl md:text-6xl lg:text-7xl capitalize"

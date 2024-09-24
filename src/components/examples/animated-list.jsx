@@ -75,11 +75,11 @@ const Notification = ({ name, description, icon, color, time }) => {
     );
 };
 
-export function AnimatedListDemo({ className }) {
+export function AnimatedListComponent({ className }) {
     return (
         <div
             className={cn(
-                "relative flex h-[500px] w-full flex-col p-6 overflow-hidden rounded-lg border bg-background md:shadow-xl",
+                "relative flex h-[400px] w-full flex-col p-6 overflow-hidden rounded-lg border bg-background md:shadow-xl",
                 className
             )}
         >
