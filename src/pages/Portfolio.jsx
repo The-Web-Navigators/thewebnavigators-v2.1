@@ -47,7 +47,7 @@ function Portfolio() {
   const isHome = location.pathname === '/';
 
   const renderPortfolioItem = (item) => (
-    <a key={item.href} className="flex flex-col gap-2 group relative overflow-hidden cursor-pointer" href={item.href}>
+    <a key={item.href} className="w-[400px] flex flex-col gap-2 group relative overflow-hidden cursor-pointer" href={item.href}>
       <img
         src={item.imgSrc}
         alt={item.alt}
