@@ -1,6 +1,5 @@
 // src/pages/Home.js
 "use client";
-import { cn } from "../lib/utils";
 
 import React from 'react';
 import { motion } from 'framer-motion';
@@ -15,7 +14,6 @@ import AvatarCircles from "../components/magicui/avatar-circles";
 // Import Components
 import { AnimatedGradientTextComponent } from '../components/react/AnimatedGradientTextComponent';
 import { ShimmerButtonComponent } from '../components/react/ShimmerButtonComponent';
-import { MarqueeComponent } from '../components/react/MarqueeComponent';
 import { Link } from 'react-router-dom';
 import { NumberTickerComponent } from '../components/react/NumberTickerComponent';
 import Portfolio from "./Portfolio";
@@ -25,6 +23,7 @@ import MeetTheTeam from "../components/react/MeetTheTeam";
 import RedWaveVPLogo from '../assets/images/redwavevp-logo.png';
 import JpLewisLogo from '../assets/images/jplewis-logo.jpeg';
 import SponsorProLogo from '../assets/images/SponsorPro-logo.png';
+import Testimonials from "../components/react/Testimonials";
 
 const avatarUrls = [
     "https://avatars.githubusercontent.com/u/16860528",
@@ -33,117 +32,7 @@ const avatarUrls = [
     "https://avatars.githubusercontent.com/u/59228569",
 ];
 
-// Reviews
-const reviews = [
-    {
-        clientName: "Andrew Davies",
-        clientUsername: "@andrewdavies", // Derived from clientName
-        reviewBody: 'Very fast turnaround, did the job as requested, no issues or problems, would use again',
-        clientProfilePhoto: 'https://www.upwork.com/profile-portraits/c1ETy2V41TYEMbK_UkE4Gp_QndW-EkANRhGmDwftqk6BJiP7PAXAAoDxfQp2xhzsPG',
-        projectScreenshot: "https://magicui.design/showcase/aomni.png", // Reuse URL
-    },
-    {
-        clientName: "Yang Henry",
-        clientUsername: "@yanghenry", // Derived from clientName
-        reviewBody: 'Very Patient and talented. This work was extended for a month because I was continuously asking for changes, but Jatin was always very patient and successfully completed all the work that I asked for. I really appreciate his hard work. Meanwhile, he spent a lot of time communicating with me regarding to the project. His way of expressing was pretty clear and polite. I would highly recommend hiring him for your project.',
-        clientProfilePhoto: 'https://www.upwork.com/profile-portraits/c1fFy29XOhI1nk0OdyqgvxMfhOyg-aWJmjGg4cnQa0VtDzHjSj5Qi_9CSboencGoR_',
-        projectScreenshot: "https://magicui.design/showcase/cognosys.png", // Reuse URL
-    },
-    {
-        clientName: "Yang Henry",
-        clientUsername: "@yanghenry", // Derived from clientName
-        reviewBody: 'Jatin has done a great job on my full stack development project. My project is really big but he managed to get every step done perfectly. Also he is always full of pashion & his working speed is fast. He has professional skills and knowledge that allow him to finish complicated tasks. I Really enjoy the experience working with him and will continue working with him on the further changes.',
-        clientProfilePhoto: 'https://www.upwork.com/profile-portraits/c1fFy29XOhI1nk0OdyqgvxMfhOyg-aWJmjGg4cnQa0VtDzHjSj5Qi_9CSboencGoR_',
-        projectScreenshot: "https://magicui.design/showcase/infisical.png", // Reuse URL
-    },
-    {
-        clientName: "Yang Henry",
-        clientUsername: "@yanghenry", // Derived from clientName
-        reviewBody: 'I really like the work Jatin has provided. Will release further tasks to him. I really love the work Jatin has provided. He is offering fast & reliable service. He has good knowledge in building a highly-customized website, and I will be working with him more in the future',
-        clientProfilePhoto: 'https://www.upwork.com/profile-portraits/c1fFy29XOhI1nk0OdyqgvxMfhOyg-aWJmjGg4cnQa0VtDzHjSj5Qi_9CSboencGoR_',
-        projectScreenshot: "https://magicui.design/showcase/llmreport.png", // Reuse URL
-    },
-    {
-        clientName: "Preeti Bhatia",
-        clientUsername: "@preetibhatia", // Derived from clientName
-        reviewBody: 'Very helpful and very cooperative Thanks Jatin',
-        clientProfilePhoto: 'https://www.upwork.com/profile-portraits/c1fBOi4SiUsSNS9jy3lx3VBFjcjj3UnBB_csPdbCTJLbcd2pzUZPxs-foYXB4OubXG',
-        projectScreenshot: "https://magicui.design/showcase/zen-browser.png", // Reuse URL
-    },
-    {
-        clientName: "Yerramsetti Chalapathi Rao",
-        clientUsername: "@yerramsetti", // Derived from clientName
-        reviewBody: 'Jatin Dahiya did exactly what we requested in exactly the right timeframe. Excellent work. A++++',
-        clientProfilePhoto: 'https://www.upwork.com/profile-portraits/c1I_JxYtVJPTMbBitDrSeJKXOHzne_45DqldomE3a7gUsLD6XbBAGeAE84bI3qnaP1',
-        projectScreenshot: "https://magicui.design/showcase/aomni.png", // Reuse URL
-    },
-    {
-        clientName: "James Lewis",
-        clientUsername: "@jameslewis", // Derived from clientName
-        reviewBody: 'Excellent work!!!! He gave me exactly what I requested. I am looking forward to using him again in the future🙂',
-        clientProfilePhoto: 'https://www.upwork.com/profile-portraits/c1bjAY_NmGz9vYWUYzM-JJ-w4wRshV971Y5xntNd-S1gRQtJ9jXr8IvpcydUBQ9Oyl',
-        projectScreenshot: "https://magicui.design/showcase/aomni.png", // Reuse URL
-    },
-    {
-        clientName: "Yerramsetti Chalapathi Rao",
-        clientUsername: "@yerramsetti", // Derived from clientName
-        reviewBody: 'Jatin Dahiya was great! Completed my task really quickly and was very knowledgeable. Highly recommend!',
-        clientProfilePhoto: 'https://www.upwork.com/profile-portraits/c1I_JxYtVJPTMbBitDrSeJKXOHzne_45DqldomE3a7gUsLD6XbBAGeAE84bI3qnaP1',
-        projectScreenshot: "https://magicui.design/showcase/zen-browser.png", // Reuse URL
-    },
-    {
-        clientName: "Faizy Jamal",
-        clientUsername: "@faizyjamal", // Derived from clientName
-        reviewBody: 'I want to thank Jatin, for all the hard work he has done. From start to finish there was always a strong level of respect & understanding for the goal at hand. Working closely with him really took our programming to the next level!! He thinks about problems, finds solutions, and has awesome morale. Great communication, great working skills in outreach, and high work quality and efficiency. He had a DEEP understanding of what work was needed and performed above and BEYOND expectations. The tone of his communication was wonderful and emotionally engaging on all levels. To top it off, his experience is incredibly professional, fast, and reliable. Thank You Again, Faizy Jamal',
-        clientProfilePhoto: 'https://www.upwork.com/profile-portraits/c1HW5mZiPPNrTd3O4xUkXnpJ3TN6h7BM5gLrDfD51D2rsNS0f0FhTkSiv4IpDrZ5g-',
-        projectScreenshot: "https://magicui.design/showcase/aomni.png", // Reuse URL
-    },
-    {
-        clientName: "Caroline Swamidoss",
-        clientUsername: "@carolineswamidoss", // Derived from clientName
-        reviewBody: 'Jatin incorporated all the changes that I wanted in the website. He was professional and responded very quickly. I highly recommend him! He is very good at designing websites. I would definitely work with him again. He worked on a Sunday and gave me the desired outcomes for my website',
-        clientProfilePhoto: 'https://www.upwork.com/profile-portraits/c1fQHdjbJpBBR474f7aJUnbgBVriwUjJoeizS5Hr00DsVHe9CBAkagrqpZ-1rPQOie',
-        projectScreenshot: "https://magicui.design/showcase/zen-browser.png", // Reuse URL
-    },
-    {
-        clientName: "Gavin Gene",
-        clientUsername: "@gavingene", // Derived from clientName
-        reviewBody: 'Jatin did everything asked of him and more. This small project was completed without a hitch. The front end and the database are functioning properly. Jatin was attentive and understood my requests and asked questions when necessary. We will continue to work with Jatin in the future and I recommend him to anyone looking for a reliable developer.',
-        clientProfilePhoto: 'https://www.upwork.com/profile-portraits/c1OEhIAyRd2T5jeUFUcKETENrfxCJEbSryKZUq0vPN_LNmPzW74wW8O6SWQGbN_RPh',
-        projectScreenshot: "https://magicui.design/showcase/aomni.png", // Reuse URL
-    },
-];
 
-const reviewItems = reviews.map((item, index) => {
-    // Truncate reviewBody if longer than 80 characters
-    const reviewText =
-        item.reviewBody.length > 80
-            ? `${item.reviewBody.slice(0, 80)}... Read more`
-            : item.reviewBody;
-
-    return (
-        <figure
-            key={index}
-            className={cn(
-                "relative w-80 cursor-pointer overflow-hidden rounded-xl border p-4",
-                // light styles
-                "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-                // dark styles
-                "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
-            )}
-        >
-            <div className="flex flex-row items-center gap-2">
-                <img className="rounded-full" width="32" height="32" alt={item.clientName} src={item.clientProfilePhoto} />
-                <div className="flex flex-col">
-                    <figcaption className="text-sm font-medium dark:text-white">{item.clientName}</figcaption>
-                    <p className="text-xs font-medium dark:text-white/40">{item.clientUsername}</p>
-                </div>
-            </div>
-            <blockquote className="mt-2 text-xs dark:text-white">{reviewText}</blockquote>
-            <img src={item.projectScreenshot} className="mt-2 rounded-lg" alt="" />
-        </figure>
-    );
-});
 
 export default function Home() {
     const { toggleTheme } = useTheme();
@@ -270,11 +159,7 @@ export default function Home() {
 
             <MeetTheTeam />
 
-            <section id='testimonials' className='mt-44 px-6'>
-                <h2 className="mb-4 text-5xl font-bold leading-[1.2] bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 tracking-tighter text-transparent text-center">What People Are Saying</h2>
-                <h3 className="mx-auto mb-8 max-w-lg text-balance text-center text-lg font-normal tracking-tight text-gray-400">Don't just take our word for it. Here's what <strong>real people</strong> are saying about our work.</h3>
-                <MarqueeComponent marqueeItems={reviewItems} />
-            </section>
+            <Testimonials/>
 
         </main>
     );

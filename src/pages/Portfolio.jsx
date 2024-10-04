@@ -2,64 +2,24 @@ import React from 'react';
 import { useLocation } from 'react-router-dom';
 import Marquee from "../components/magicui/marquee";
 import { motion } from 'framer-motion';
-
-
-const portfolioItems = [
-  {
-    href: '/showcase/aomni',
-    imgSrc: 'https://magicui.design/showcase/aomni.png',
-    alt: 'aomni.com',
-    title: 'aomni.com',
-    description: 'Raised seed round from notable investors.',
-  },
-  {
-    href: '/showcase/cognosys',
-    imgSrc: 'https://magicui.design/showcase/cognosys.png',
-    alt: 'cognosys.com',
-    title: 'cognosys.com',
-    description: 'AI-powered business solutions.',
-  },
-  {
-    href: '/showcase/infisical',
-    imgSrc: 'https://magicui.design/showcase/infisical.png',
-    alt: 'infisical.com',
-    title: 'infisical.com',
-    description: 'Secure secrets management for teams.',
-  },
-  {
-    href: '/showcase/llmreport',
-    imgSrc: 'https://magicui.design/showcase/llmreport.png',
-    alt: 'llmreport.com',
-    title: 'llmreport.com',
-    description: 'Comprehensive language model analysis.',
-  },
-  {
-    href: '/showcase/zen-browser',
-    imgSrc: 'https://magicui.design/showcase/zen-browser.png',
-    alt: 'zen-browser.com',
-    title: 'zen-browser.com',
-    description: 'A privacy-focused web browser.',
-  },
-];
+import { usePortfolio } from '../contexts/PortfolioContext';
 
 function Portfolio() {
   const location = useLocation();
   const isHome = location.pathname === '/';
+  const portfolioItems = usePortfolio();
 
   const renderPortfolioItem = (item) => (
     <a key={item.href} className="w-[400px] flex flex-col gap-2 group relative overflow-hidden cursor-pointer" href={item.href}>
-      <img
-        src={item.imgSrc}
-        alt={item.alt}
-        width="500"
-        height="300"
-        className="size-full object-cover max-h-[300px] rounded-xl"
-      />
+      <img src={item.imgSrc} alt={item.alt} width="500" height="300" className="size-full object-cover max-h-[300px] rounded-xl" />
       <div className="flex flex-col">
         <div className="group inline-flex items-center gap-1 text-xl font-semibold text-neutral-700 dark:text-neutral-300 duration-200 hover:text-neutral-700 dark:hover:text-neutral-200">
           {item.title}
         </div>
-        <p className="text-neutral-400 text-sm">{item.description}</p>
+        <p className="text-neutral-400 text-sm">
+          {item.description.length > 80 ? `${item.description.substring(0, 80)} ...` : item.description}
+        </p>
+
       </div>
     </a>
   );
@@ -83,7 +43,7 @@ function Portfolio() {
       {isHome ? (
         <div className="mt-8 relative flex flex-col">
           <div className="flex overflow-hidden p-2 max-w-screen">
-            <Marquee pauseOnHover className="[--duration:20s]">
+            <Marquee pauseOnHover className="[--duration:60s]">
               {portfolioItems.map(renderPortfolioItem)}
             </Marquee>
           </div>

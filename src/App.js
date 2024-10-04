@@ -10,12 +10,14 @@ import WhatWeDo from './pages/WhatWeDo';
 import Portfolio from './pages/Portfolio';
 import Footer from './components/react/Footer';
 import ScrollToTop from './ScrollToTop';
+import { PortfolioProvider } from './contexts/PortfolioContext';
 
 function App() {
   return (
     <ThemeProvider>
-      <Router basename="/">
-        <ScrollToTop/>
+      <PortfolioProvider>
+        <Router basename="/">
+          <ScrollToTop />
           <Header />
           <Routes>
             {/* Define routes */}
@@ -26,7 +28,8 @@ function App() {
             {/* Add more routes as needed */}
           </Routes>
           <Footer />
-      </Router>
+        </Router>
+      </PortfolioProvider>
     </ThemeProvider>
   );
 }
