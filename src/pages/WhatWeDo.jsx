@@ -49,7 +49,7 @@ export default function WhatWeDo() {
         <FileTreeComponent/>
       </div>
 
-      <div className='mt-16 mb-16 xl:mt-32 xl:mb-32 w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24 overflow-hidden'>
+      <div className='mt-16 mb-16 xl:mt-32 xl:mb-32 w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24'>
         <AnimatedListComponent className="border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
         <div className='w-full flex flex-col justify-center'>
           <motion.h2
@@ -89,7 +89,7 @@ export default function WhatWeDo() {
         <AnimatedBeamMultipleOutput className="border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_0%)] group-hover:scale-105" />
       </div>
 
-      <div className='mt-16 mb-16 xl:mt-32 xl:mb-32 w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24'>
+      <div className='mt-16 xl:mt-32 w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24'>
         <OrbitingCirclesComponent />
         <div className='w-full flex flex-col justify-center'>
           <motion.h2
