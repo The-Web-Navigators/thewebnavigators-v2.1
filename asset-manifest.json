@@ -1,8 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.f55951ca.css",
-    "main.js": "/static/js/main.549e0bd8.js",
+    "main.css": "/static/css/main.7d21a7b7.css",
+    "main.js": "/static/js/main.9f0cd9a1.js",
+    "static/media/Luxy-Hair.png": "/static/media/Luxy-Hair.b7518a687b288cfa642e.png",
+    "static/media/Proper.png": "/static/media/Proper.d0c67daf3a0ec0fc3683.png",
+    "static/media/client-daniel.png": "/static/media/client-daniel.e8c100af7701c4e5f3aa.png",
+    "static/media/JP-Lewis-Group.png": "/static/media/JP-Lewis-Group.c2e740478fde07e3d440.png",
+    "static/media/Artify-Image-Restyle.png": "/static/media/Artify-Image-Restyle.aea6445a2cb46d8e2f78.png",
+    "static/media/GuWiGuttersAndWindows.png": "/static/media/GuWiGuttersAndWindows.6caf5ae6827bb85aed88.png",
+    "static/media/Sponsor-Pro-AI-Outreach.png": "/static/media/Sponsor-Pro-AI-Outreach.d6835233b94dcdb4c6ce.png",
+    "static/media/ImageCreator.png": "/static/media/ImageCreator.5e403e1ace71527ed96e.png",
+    "static/media/Durable.png": "/static/media/Durable.8d4e4cebdaaa272a48e8.png",
+    "static/media/Rainfire-Online-Store.png": "/static/media/Rainfire-Online-Store.7461d35803e75b14fd24.png",
+    "static/media/Compressor-io.png": "/static/media/Compressor-io.41fc831db00f5d204a7d.png",
+    "static/media/Sidebird-Twitter-fanbase-builder.png": "/static/media/Sidebird-Twitter-fanbase-builder.944b2aa6aa5756b31e3d.png",
     "static/media/SponsorPro-logo.png": "/static/media/SponsorPro-logo.a4924baf32e44cd17856.png",
+    "static/media/Gu-Wi-Dashboard.png": "/static/media/Gu-Wi-Dashboard.66dea42834df6ad5b73e.png",
     "static/media/Geist-Black.woff": "/static/media/Geist-Black.bd45a4d39e1db1f43ea4.woff",
     "static/media/Geist-UltraBlack.woff": "/static/media/Geist-UltraBlack.0b1e223db8daabcd712c.woff",
     "static/media/Geist-Bold.woff": "/static/media/Geist-Bold.9b47f4f8d9c26f7c1eec.woff",
@@ -27,11 +40,11 @@
     "static/media/jatin.jpeg": "/static/media/jatin.c93e270f4c118db17a72.jpeg",
     "static/media/redwavevp-logo.png": "/static/media/redwavevp-logo.ebd4fbd0edd5aace8eb1.png",
     "index.html": "/index.html",
-    "main.f55951ca.css.map": "/static/css/main.f55951ca.css.map",
-    "main.549e0bd8.js.map": "/static/js/main.549e0bd8.js.map"
+    "main.7d21a7b7.css.map": "/static/css/main.7d21a7b7.css.map",
+    "main.9f0cd9a1.js.map": "/static/js/main.9f0cd9a1.js.map"
   },
   "entrypoints": [
-    "static/css/main.f55951ca.css",
-    "static/js/main.549e0bd8.js"
+    "static/css/main.7d21a7b7.css",
+    "static/js/main.9f0cd9a1.js"
   ]
 }
