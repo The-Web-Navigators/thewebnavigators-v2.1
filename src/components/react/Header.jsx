@@ -41,7 +41,11 @@ export default function Header() {
                         <Link className="text-sm text-tertiary-dark dark:text-tertiary-light" to="/what-we-do" onClick={closeNavBar}>What We Do?</Link>
                         <Link className="text-sm text-tertiary-dark dark:text-tertiary-light" to="/portfolio" onClick={closeNavBar}>Portfolio</Link>
                         <Link className="text-sm text-tertiary-dark dark:text-tertiary-light" to="/blogs" onClick={closeNavBar}>Blogs</Link>
-                        <Link className="text-sm text-tertiary-dark dark:text-tertiary-light bg-secondary-light dark:bg-secondary-dark px-4 py-2 rounded-md font-medium transition-colors" to="/talk-to-us" onClick={closeNavBar}>Talk To Us</Link>
+                        <div className="text-sm text-tertiary-dark dark:text-tertiary-light bg-secondary-light dark:bg-secondary-dark px-4 py-2 rounded-md font-medium transition-colors" onClick={() => {
+                            closeNavBar();
+                            window.tidioChatApi.show();
+                            window.tidioChatApi.open();
+                        }}>Talk To Us</div>
                     </div>
                     <div
                         className="flex sm:hidden flex-col gap-1 items-start cursor-pointer"
