@@ -32,8 +32,6 @@ const avatarUrls = [
     "https://avatars.githubusercontent.com/u/59228569",
 ];
 
-
-
 export default function Home() {
     const { toggleTheme } = useTheme();
 
