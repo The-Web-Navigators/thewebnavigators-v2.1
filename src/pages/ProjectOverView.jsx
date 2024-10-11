@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom'; // Import useParams
 import { usePortfolio } from '../contexts/PortfolioContext';
-import { useTheme } from '../contexts/ThemeContext';
 import { SafariComponent } from '../components/react/SafariComponent';
 
 // Utility function to create slugs
@@ -16,7 +15,6 @@ const createSlug = (title) => {
 };
 
 export default function ProjectOverView() {
-    const { isDarkMode } = useTheme();
 
     const { projectTitle } = useParams(); // Get the projectTitle from the URL
     const portfolioItems = usePortfolio();

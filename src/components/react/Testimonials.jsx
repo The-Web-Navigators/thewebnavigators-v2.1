@@ -2,6 +2,18 @@ import { cn } from "../../lib/utils";
 import React from 'react';
 import { MarqueeComponent } from '../../components/react/MarqueeComponent';
 import { usePortfolio } from '../../contexts/PortfolioContext';
+import { Link } from "react-router-dom";
+
+// Utility function to create slugs
+const createSlug = (title) => {
+    return title
+      .toLowerCase() // Convert to lowercase
+      .trim() // Trim whitespace from both ends
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
+      .replace(/[^\w-]+/g, '') // Remove all non-word characters (except hyphens)
+      .replace(/--+/g, '-') // Replace multiple hyphens with a single hyphen
+      .replace(/^-+|-+$/g, ''); // Remove hyphens from the beginning and end
+  };
 
 export default function Testimonials() {
     const portfolioItems = usePortfolio();
@@ -14,16 +26,12 @@ export default function Testimonials() {
                 : item.review.reviewBody;
 
         return (
-            <figure
-                key={index}
-                className={cn(
-                    "relative w-80 cursor-pointer overflow-hidden rounded-xl border p-4",
-                    // light styles
-                    "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
-                    // dark styles
-                    "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]"
-                )}
-            >
+            <Link to={`/portfolio/${createSlug(item.title)}`} key={index} className={cn(
+                "relative w-80 cursor-pointer overflow-hidden rounded-xl border p-4",
+                // light styles
+                "border-gray-950/[.1] bg-gray-950/[.01] hover:bg-gray-950/[.05]",
+                // dark styles
+                "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]")}>
                 <div className="flex flex-row items-center gap-2">
                     <img className="rounded-full" width="32" height="32" alt={item.review.clientName} src={item.review.clientProfilePhoto} />
                     <div className="flex flex-col">
@@ -33,7 +41,7 @@ export default function Testimonials() {
                 </div>
                 <blockquote className="mt-2 text-xs dark:text-white">{reviewText}</blockquote>
                 <img src={item.imgSrc} className="mt-2 rounded-lg" alt="" />
-            </figure>
+            </Link>
         );
     });
 
