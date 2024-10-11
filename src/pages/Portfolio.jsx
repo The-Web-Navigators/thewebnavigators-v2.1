@@ -10,7 +10,7 @@ function Portfolio() {
   const portfolioItems = usePortfolio();
 
   const renderPortfolioItem = (item) => (
-    <a key={item.href} className="xl:w-[400px] flex flex-col gap-2 group relative overflow-hidden cursor-pointer" href={item.href}>
+    <a key={item.href} target='_blank' rel="noreferrer" className="xl:w-[400px] flex flex-col gap-2 group relative overflow-hidden cursor-pointer" href={item.href}>
       <img src={item.imgSrc} alt={item.alt} width="500" height="300" className="size-full object-cover max-h-[300px] rounded-xl" />
       <div className="flex flex-col">
         <div className="group inline-flex items-center gap-1 text-[14px] xl:text-xl font-semibold text-neutral-700 dark:text-neutral-300 duration-200 hover:text-neutral-700 dark:hover:text-neutral-200">
