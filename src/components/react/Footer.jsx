@@ -11,17 +11,14 @@ export default function Footer() {
                             Still have questions?
                         </h3>
                         <div className="flex flex-col items-center justify-center gap-x-5 gap-y-2 py-4 sm:flex-row">
-                            <div className="cursor-pointer flex h-10 w-40 items-center justify-center rounded-full bg-neutral-800 text-base font-semibold text-white transition ease-out hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 dark:bg-white dark:text-black dark:hover:ring-white dark:hover:ring-offset-black lg:h-12 lg:text-base" onClick={() => {
-                                window.tidioChatApi.show();
-                                window.tidioChatApi.open();
-                            }}>
+                            <div className="cursor-pointer flex h-10 w-40 items-center justify-center rounded-full bg-neutral-800 text-base font-semibold text-white transition ease-out hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 dark:bg-white dark:text-black dark:hover:ring-white dark:hover:ring-offset-black lg:h-12 lg:text-base" onClick={() => { window.tidioChatApi.show(); window.tidioChatApi.open(); }}>
                                 <span className="tracking-tight">Let's Chat</span>
                                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-2">
                                     <path d="M6.1584 3.13508C6.35985 2.94621 6.67627 2.95642 6.86514 3.15788L10.6151 7.15788C10.7954 7.3502 10.7954 7.64949 10.6151 7.84182L6.86514 11.8418C6.67627 12.0433 6.35985 12.0535 6.1584 11.8646C5.95694 11.6757 5.94673 11.3593 6.1356 11.1579L9.565 7.49985L6.1356 3.84182C5.94673 3.64036 5.95694 3.32394 6.1584 3.13508Z" fill="currentColor" fillRule="evenodd" clipRule="evenodd" />
                                 </svg>
                             </div>
-                            <Link to="/" className="flex h-10 w-40 items-center justify-center rounded-full border text-sm font-semibold text-neutral-900 transition ease-out hover:bg-neutral-200/30 dark:text-white dark:hover:bg-neutral-700/30 lg:h-12 lg:text-base">
-                                <span className="tracking-tight">Request Demo</span>
+                            <Link to="https://www.upwork.com/freelancers/~012d6eb926a1f7a86a" target='_blank' className="flex h-10 w-40 items-center justify-center rounded-full border text-sm font-semibold text-neutral-900 transition ease-out hover:bg-neutral-200/30 dark:text-white dark:hover:bg-neutral-700/30 lg:h-12 lg:text-base">
+                                <span className="tracking-tight">View Profile</span>
                             </Link>
                         </div>
                     </div>

@@ -11,6 +11,7 @@ import Portfolio from './pages/Portfolio';
 import Footer from './components/react/Footer';
 import ScrollToTop from './ScrollToTop';
 import { PortfolioProvider } from './contexts/PortfolioContext';
+import ProjectOverView from './pages/ProjectOverView';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/what-we-do" element={<WhatWeDo />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/:projectTitle" element={<ProjectOverView />} />
             <Route path="/blogs" element={<Home />} />
             {/* Add more routes as needed */}
           </Routes>

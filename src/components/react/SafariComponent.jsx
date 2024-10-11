@@ -1,9 +1,9 @@
 import Safari from "../magicui/safari";
 
-export function SafariComponent({url}) {
+export function SafariComponent({ src, url, width,height }) {
     return (
         <div className="relative">
-            <Safari url={url} className="size-full" />
+            <Safari src={src} url={url} width={width} height={height} className="size-full" />
         </div>
     );
 }

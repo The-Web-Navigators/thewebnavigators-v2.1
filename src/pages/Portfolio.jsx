@@ -1,8 +1,19 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import Marquee from "../components/magicui/marquee";
 import { motion } from 'framer-motion';
 import { usePortfolio } from '../contexts/PortfolioContext';
+
+// Utility function to create slugs
+const createSlug = (title) => {
+  return title
+    .toLowerCase() // Convert to lowercase
+    .trim() // Trim whitespace from both ends
+    .replace(/\s+/g, '-') // Replace spaces with hyphens
+    .replace(/[^\w-]+/g, '') // Remove all non-word characters (except hyphens)
+    .replace(/--+/g, '-') // Replace multiple hyphens with a single hyphen
+    .replace(/^-+|-+$/g, ''); // Remove hyphens from the beginning and end
+};
 
 function Portfolio() {
   const location = useLocation();
@@ -10,7 +21,7 @@ function Portfolio() {
   const portfolioItems = usePortfolio();
 
   const renderPortfolioItem = (item) => (
-    <a key={item.href} target='_blank' rel="noreferrer" className="xl:w-[400px] flex flex-col gap-2 group relative overflow-hidden cursor-pointer" href={item.href}>
+    <Link key={item.href} to={`/portfolio/${createSlug(item.title)}`} className="xl:w-[400px] flex flex-col gap-2 group relative overflow-hidden cursor-pointer">
       <img src={item.imgSrc} alt={item.alt} width="500" height="300" className="size-full object-cover max-h-[300px] rounded-xl" />
       <div className="flex flex-col">
         <div className="group inline-flex items-center gap-1 text-[14px] xl:text-xl font-semibold text-neutral-700 dark:text-neutral-300 duration-200 hover:text-neutral-700 dark:hover:text-neutral-200">
@@ -20,7 +31,7 @@ function Portfolio() {
           {item.description.length > 80 ? `${item.description.substring(0, 80)} ...` : item.description}
         </p>
       </div>
-    </a>
+    </Link>
   );
 
   return (
