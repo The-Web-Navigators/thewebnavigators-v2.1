@@ -66,7 +66,11 @@ export default function Header() {
                     <Link className="w-full text-lg text-tertiary-dark dark:text-tertiary-light border-grey-dark p-4 border-b-[0.50px] border-tertiary-light dark:border-tertiary-dark" to="/what-we-do" onClick={closeNavBar}>What We Do?</Link>
                     <Link className="w-full text-lg text-tertiary-dark dark:text-tertiary-light border-grey-dark p-4 border-b-[0.50px] border-tertiary-light dark:border-tertiary-dark" to="/portfolio" onClick={closeNavBar}>Portfolio</Link>
                     <Link className="w-full text-lg text-tertiary-dark dark:text-tertiary-light border-grey-dark p-4 border-b-[0.50px] border-tertiary-light dark:border-tertiary-dark" to="/blogs" onClick={closeNavBar}>Blogs</Link>
-                    <Link className="w-full text-lg text-tertiary-dark dark:text-tertiary-light border-grey-dark p-4 border-b-[0.50px] border-tertiary-light dark:border-tertiary-dark" to="/talk-to-us" onClick={closeNavBar}>Talk To Us</Link>
+                    <Link className="w-full text-lg text-tertiary-dark dark:text-tertiary-light border-grey-dark p-4 border-b-[0.50px] border-tertiary-light dark:border-tertiary-dark" to="/talk-to-us" onClick={() => {
+                        closeNavBar();
+                        window.tidioChatApi.show();
+                        window.tidioChatApi.open();
+                    }}>Talk To Us</Link>
                 </div>
             </nav>
         </>
