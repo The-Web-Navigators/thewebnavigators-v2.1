@@ -1,4 +1,5 @@
 import React from 'react';
+import SEO from '../components/react/SEO';
 import { useLocation, Link } from 'react-router-dom';
 import Marquee from "../components/magicui/marquee";
 import { motion } from 'framer-motion';
@@ -35,41 +36,56 @@ function Portfolio() {
   );
 
   return (
-    <section id="portfolio" className="mt-28">
-      <motion.h2
-        className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-center py-2 text-5xl font-medium text-transparent tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}>
-        Portfolio
-      </motion.h2>
-      <motion.h3
-        className="mt-2 text-lg tracking-tight text-gray-400 text-balance text-center md:text-xl"
-        initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ ease: "easeInOut", duration: 1, delay: 0.2 }}>
-        Explore our portfolio of innovative, successful projects.
-      </motion.h3>
-      {isHome ? (
-        <div className="mt-8 relative flex flex-col">
-          <div className="flex overflow-hidden p-2 max-w-screen">
-            <Marquee pauseOnHover className="[--duration:60s]">
-              {portfolioItems.map(renderPortfolioItem)}
-            </Marquee>
-          </div>
-          <div className="pointer-events-none absolute inset-y-0 left-0 h-full w-1/6 bg-gradient-to-r from-primary-light dark:from-primary-dark"></div>
-          <div className="pointer-events-none absolute inset-y-0 right-0 h-full w-1/5 bg-gradient-to-l from-primary-light dark:from-primary-dark"></div>
-        </div>
-      ) : (
-        <motion.div
-          className="mt-8 grid grid-cols-2 xl:grid-cols-3 gap-6 container mx-auto px-6 md:px-8"
+    <>
+      {location.pathname === '/portfolio' && (
+        <SEO
+          title="Portfolio - The Web Navigators"
+          description="Explore our portfolio showcasing innovative web applications and design solutions that empower businesses and elevate brands."
+          keywords="portfolio, web development, web design, case studies, client projects, The Web Navigators"
+          ogType="website"
+          ogUrl="https://thewebnavigators.com/"
+          ogImage="https://thewebnavigators.com/og-image.png"
+          twitterCard="summary_large_image"
+          twitterImage="https://thewebnavigators.com/twitter-image.png"
+        />
+      )}
+
+      <section id="portfolio" className="mt-28">
+        <motion.h2
+          className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-center py-2 text-5xl font-medium text-transparent tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ ease: "easeInOut", duration: 1, delay: 0.8 }}>
-          {portfolioItems.map(renderPortfolioItem)}
-        </motion.div>
-      )}
-    </section>
+          transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}>
+          Portfolio
+        </motion.h2>
+        <motion.h3
+          className="mt-2 text-lg tracking-tight text-gray-400 text-balance text-center md:text-xl"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeInOut", duration: 1, delay: 0.2 }}>
+          Explore our portfolio of innovative, successful projects.
+        </motion.h3>
+        {isHome ? (
+          <div className="mt-8 relative flex flex-col">
+            <div className="flex overflow-hidden p-2 max-w-screen">
+              <Marquee pauseOnHover className="[--duration:60s]">
+                {portfolioItems.map(renderPortfolioItem)}
+              </Marquee>
+            </div>
+            <div className="pointer-events-none absolute inset-y-0 left-0 h-full w-1/6 bg-gradient-to-r from-primary-light dark:from-primary-dark"></div>
+            <div className="pointer-events-none absolute inset-y-0 right-0 h-full w-1/5 bg-gradient-to-l from-primary-light dark:from-primary-dark"></div>
+          </div>
+        ) : (
+          <motion.div
+            className="mt-8 grid grid-cols-2 xl:grid-cols-3 gap-6 container mx-auto px-6 md:px-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ ease: "easeInOut", duration: 1, delay: 0.8 }}>
+            {portfolioItems.map(renderPortfolioItem)}
+          </motion.div>
+        )}
+      </section>
+    </>
   );
 }
 

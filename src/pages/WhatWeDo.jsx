@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { useLocation } from 'react-router-dom';
 import SEO from '../components/react/SEO';
 import { AnimatedBeamMultipleOutput } from "../components/examples/animated-beam-multiple-outputs";
 import { AnimatedListComponent } from "../components/examples/animated-list";
@@ -9,18 +10,22 @@ import { FileTreeComponent } from '../components/react/FileTreeComponent';
 
 
 export default function WhatWeDo() {
+  const location = useLocation();
+
   return (
     <>
-      <SEO
-        title="What We Do - The Web Navigators"
-        description="Discover how The Web Navigators empower businesses with innovative web solutions. From design to development, we create exceptional digital experiences."
-        keywords="web development, digital solutions, design excellence, real-time applications, API integrations, The Web Navigators"
-        ogType="website"
-        ogUrl="https://thewebnavigators.com/"
-        ogImage="https://thewebnavigators.com/og-image.png"
-        twitterCard="summary_large_image"
-        twitterImage="https://thewebnavigators.com/twitter-image.png"
-      />
+      {location.pathname === '/what-we-do' && (
+        <SEO
+          title="What We Do - The Web Navigators"
+          description="Discover how The Web Navigators empower businesses with innovative web solutions. From design to development, we create exceptional digital experiences."
+          keywords="web development, digital solutions, design excellence, real-time applications, API integrations, The Web Navigators"
+          ogType="website"
+          ogUrl="https://thewebnavigators.com/"
+          ogImage="https://thewebnavigators.com/og-image.png"
+          twitterCard="summary_large_image"
+          twitterImage="https://thewebnavigators.com/twitter-image.png"
+        />
+      )}
 
       <section className='mt-32 container mx-auto px-6 md:px-8'>
         <div className='w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24 items-center justify-center'>

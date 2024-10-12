@@ -2,6 +2,7 @@
 "use client";
 
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useTheme } from '../contexts/ThemeContext';
 
@@ -34,20 +35,23 @@ const avatarUrls = [
 ];
 
 export default function Home() {
+    const location = useLocation();
     const { toggleTheme } = useTheme();
 
     return (
         <main>
-            <SEO
-                title="The Web Navigators - A Software Company"
-                description="Navigating the Web’s Meteor Showers. We help businesses and individuals develop web applications."
-                keywords="web development, web applications, business solutions, web design, app development, The Web Navigators"
-                ogType="website"
-                ogUrl="https://thewebnavigators.com/"
-                ogImage="https://thewebnavigators.com/og-image.png"
-                twitterCard="summary_large_image"
-                twitterImage="https://thewebnavigators.com/twitter-image.png"
-            />
+            {location.pathname === '/' && (
+                <SEO
+                    title="The Web Navigators - A Software Company"
+                    description="Navigating the Web’s Meteor Showers. We help businesses and individuals develop web applications."
+                    keywords="web development, web applications, business solutions, web design, app development, The Web Navigators"
+                    ogType="website"
+                    ogUrl="https://thewebnavigators.com/"
+                    ogImage="https://thewebnavigators.com/og-image.png"
+                    twitterCard="summary_large_image"
+                    twitterImage="https://thewebnavigators.com/twitter-image.png"
+                />
+            )}
 
             <section id='hero' className='relative pt-32 mx-auto h-screen px-6 md:px-8 flex flex-col items-center overflow-hidden'>
                 <motion.div
