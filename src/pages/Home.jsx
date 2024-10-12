@@ -69,8 +69,8 @@ export default function Home() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     transition={{ ease: "easeInOut", duration: 1, delay: 0.8 }}>
-                    <ShimmerButtonComponent className="px-8 py-4" buttonText="Get Started" onClick={toggleTheme} />
-                    <Link to="/portfolio" className="px-8 py-4 rounded-full text-primary-dark dark:text-primary-light bg-secondary-light dark:bg-secondary-dark whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight inline-flex items-center gap-1">
+                    <ShimmerButtonComponent className="px-4 py-4 lg:px-8" buttonText="Get Started" onClick={toggleTheme} />
+                    <Link to="/portfolio" className="px-4 py-4 lg:px-8 rounded-full text-primary-dark dark:text-primary-light bg-secondary-light dark:bg-secondary-dark whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight inline-flex items-center gap-1">
                         Browse Projects
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1"><path d="m9 18 6-6-6-6"></path></svg>
                     </Link>
