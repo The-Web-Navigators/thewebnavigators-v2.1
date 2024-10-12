@@ -82,7 +82,7 @@ export function AnimatedListComponent({ className }) {
     return (
         <div
             className={cn(
-                "relative h-[300px] w-full flex flex-col p-6 overflow-y-auto overflow-hidden",
+                "relative h-[500px] w-full flex flex-col p-6 overflow-y-auto overflow-hidden",
                 className
             )}
         >

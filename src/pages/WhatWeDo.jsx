@@ -9,9 +9,9 @@ import { FileTreeComponent } from '../components/react/FileTreeComponent';
 export default function WhatWeDo() {
   return (
     <section className='mt-32 container mx-auto px-6 md:px-8'>
-      <div className='w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24'>
+      <div className='w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24 items-center justify-center'>
         <IconCloudComponent />
-        <div className='w-full flex flex-col justify-center'>
+        <div className='w-full h-fit flex flex-col'>
           <motion.h2
             className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-5xl font-medium leading-none tracking-tighter text-transparent sm:text-5xl md:text-6xl lg:text-7xl capitalize text-center xl:text-start"
             initial={{ opacity: 0 }}
@@ -29,8 +29,8 @@ export default function WhatWeDo() {
         </div>
       </div>
 
-      <div className='mt-16 mb-16 xl:mt-32 xl:mb-32 w-full min-h-max flex flex-col xl:flex-row gap-0 xl:gap-24'>
-        <div className='xl:w-1/2 flex flex-col justify-center'>
+      <div className='pt-32 pb-32 w-full min-h-max flex flex-col xl:flex-row gap-0 xl:gap-24 items-center justify-center'>
+        <div className='xl:w-1/2 h-[fit] flex flex-col'>
           <motion.h2
             className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-5xl font-medium leading-none tracking-tighter text-transparent sm:text-5xl md:text-6xl lg:text-7xl capitalize text-center xl:text-start"
             initial={{ opacity: 0 }}
@@ -46,12 +46,13 @@ export default function WhatWeDo() {
             We craft scalable, high-performance web applications using the latest technologies like React, Tailwind, and beyond—bringing your ideas to life with clean, powerful code.
           </motion.h3>
         </div>
-        <FileTreeComponent/>
+        <FileTreeComponent />
       </div>
 
-      <div className='mt-16 mb-16 xl:mt-32 xl:mb-32 w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24'>
+      <div className='w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24 relative items-center justify-center'>
+        <div className='absolute inset-0 z-30 bg-transparent'></div>
         <AnimatedListComponent className="border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
-        <div className='w-full flex flex-col justify-center'>
+        <div className='w-full h-fit flex flex-col'>
           <motion.h2
             className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-5xl font-medium leading-none tracking-tighter text-transparent sm:text-5xl md:text-6xl lg:text-7xl capitalize text-center xl:text-start"
             initial={{ opacity: 0 }}
@@ -69,8 +70,8 @@ export default function WhatWeDo() {
         </div>
       </div>
 
-      <div className='mt-16 mb-16 xl:mt-32 xl:mb-32 w-full min-h-max flex flex-col xl:flex-row gap-0 xl:gap-24'>
-        <div className='w-full flex flex-col justify-center'>
+      <div className='pb-18 w-full min-h-max flex flex-col xl:flex-row gap-0 xl:gap-24 items-center justify-center'>
+        <div className='w-full hit flex flex-col'>
           <motion.h2
             className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-5xl font-medium leading-none tracking-tighter text-transparent sm:text-5xl md:text-6xl lg:text-7xl capitalize text-center xl:text-start"
             initial={{ opacity: 0 }}
@@ -89,9 +90,9 @@ export default function WhatWeDo() {
         <AnimatedBeamMultipleOutput className="border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_0%)] group-hover:scale-105" />
       </div>
 
-      <div className='mt-16 xl:mt-32 w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24'>
+      <div className='w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24 items-center justify-center'>
         <OrbitingCirclesComponent />
-        <div className='w-full flex flex-col justify-center'>
+        <div className='w-full h-fit flex flex-col'>
           <motion.h2
             className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-5xl font-medium leading-none tracking-tighter text-transparent sm:text-5xl md:text-6xl lg:text-7xl capitalize text-center xl:text-start"
             initial={{ opacity: 0 }}
