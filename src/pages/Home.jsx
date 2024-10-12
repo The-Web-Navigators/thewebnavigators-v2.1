@@ -24,6 +24,7 @@ import RedWaveVPLogo from '../assets/images/redwavevp-logo.png';
 import JpLewisLogo from '../assets/images/jplewis-logo.jpeg';
 import SponsorProLogo from '../assets/images/SponsorPro-logo.png';
 import Testimonials from "../components/react/Testimonials";
+import SEO from '../components/react/SEO';
 
 const avatarUrls = [
     "https://avatars.githubusercontent.com/u/16860528",
@@ -37,6 +38,17 @@ export default function Home() {
 
     return (
         <main>
+            <SEO
+                title="The Web Navigators - A Software Company"
+                description="Navigating the Web’s Meteor Showers. We help businesses and individuals develop web applications."
+                keywords="web development, web applications, business solutions, web design, app development, The Web Navigators"
+                ogType="website"
+                ogUrl="https://thewebnavigators.com/"
+                ogImage="https://thewebnavigators.com/og-image.png"
+                twitterCard="summary_large_image"
+                twitterImage="https://thewebnavigators.com/twitter-image.png"
+            />
+
             <section id='hero' className='relative pt-32 mx-auto h-screen px-6 md:px-8 flex flex-col items-center overflow-hidden'>
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -157,7 +169,7 @@ export default function Home() {
 
             <MeetTheTeam />
 
-            <Testimonials/>
+            <Testimonials />
 
         </main>
     );
