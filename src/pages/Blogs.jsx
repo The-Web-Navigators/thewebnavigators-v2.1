@@ -10,14 +10,14 @@ export default function Blogs() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    // Contentful client setup
-    const client = createClient({
-        space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
-        accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN,
-        host: process.env.REACT_APP_CONTENTFUL_PREVIEW === 'true' ? 'preview.contentful.com' : 'cdn.contentful.com'
-    });
-
     useEffect(() => {
+        // Contentful client setup
+        const client = createClient({
+            space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
+            accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN,
+            host: process.env.REACT_APP_CONTENTFUL_PREVIEW === 'true' ? 'preview.contentful.com' : 'cdn.contentful.com'
+        });
+
         // Fetch blog posts from Contentful
         client.getEntries({ content_type: 'pageBlogPost' })
             .then((response) => {

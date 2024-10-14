@@ -19,10 +19,10 @@
                         "id": "cr38m15s8b6l"
                     }
                 },
-                "id": "4YpnxRJ6o0uhD0pxY7hHRF",
+                "id": "5Ffob3XoJGrQuKE5uRUugR",
                 "type": "Entry",
-                "createdAt": "2024-10-14T17:56:00.748Z",
-                "updatedAt": "2024-10-14T17:56:00.748Z",
+                "createdAt": "2024-10-14T17:55:54.466Z",
+                "updatedAt": "2024-10-14T20:29:18.673Z",
                 "environment": {
                     "sys": {
                         "id": "master",
@@ -30,7 +30,7 @@
                         "linkType": "Environment"
                     }
                 },
-                "revision": 1,
+                "revision": 6,
                 "contentType": {
                     "sys": {
                         "type": "Link",
@@ -41,143 +41,163 @@
                 "locale": "en-US"
             },
             "fields": {
-                "internalName": "Creating sustainable cities and the role of green urbanism",
+                "internalName": "How AR will transform our lives in 2050",
                 "seoFields": {
                     "sys": {
                         "type": "Link",
                         "linkType": "Entry",
-                        "id": "6Kx8YSKbtQ7PVsLjgPXVlv"
+                        "id": "362ZZAz4NykPIOtnT5Xzfe"
                     }
                 },
-                "slug": "creating-sustainable-cities-and-the-role-of-green-urbanism",
+                "slug": "how-ar-will-transform-our-lives-in-2050",
                 "author": {
                     "sys": {
                         "type": "Link",
                         "linkType": "Entry",
-                        "id": "7c8KzxSgPMy1oYD38nvi5z"
+                        "id": "5pJhJPUcTzpAL9ZPeXL7hr"
                     }
                 },
                 "publishedDate": "2022-12-04",
-                "title": "Creating sustainable cities and the role of green urbanism",
-                "shortDescription": "Green urbanism: a key strategy for creating sustainable cities ",
+                "title": "How AR will transform our lives in 2050",
+                "shortDescription": "Augmented Reality set to revolutionize daily life in 2050",
                 "featuredImage": {
                     "sys": {
                         "type": "Link",
                         "linkType": "Asset",
-                        "id": "2bcP5YjjO6orgVf2ClwVna"
+                        "id": "4lqxYpPLHdzfy0f8hONbGq"
                     }
                 },
                 "content": {
+                    "nodeType": "document",
                     "data": {},
                     "content": [
                         {
+                            "nodeType": "paragraph",
                             "data": {},
                             "content": [
                                 {
-                                    "data": {},
+                                    "nodeType": "text",
+                                    "value": "One of the most obvious ways that AR will change our lives is by enhancing the way we communicate. Today, we already use video calls and other forms of digital communication to connect with people who are far away. In the future, AR will take this to the next level by allowing us to see and interact with virtual representations of people in real time. This will make it feel like we're actually in the same room together, even if we're on opposite sides of the ",
                                     "marks": [],
-                                    "value": "Sustainable cities are important for the future of our planet. As urban areas continue to grow and expand, it is important that we consider the environmental impact of these developments and work to create cities that are sustainable and eco-friendly.\nOne approach to creating sustainable cities is through the concept of green urbanism. Green urbanism is a philosophy that prioritizes the integration of natural elements and environmentally-friendly design into the planning and development of urban areas.",
-                                    "nodeType": "text"
+                                    "data": {}
+                                },
+                                {
+                                    "nodeType": "hyperlink",
+                                    "data": {
+                                        "uri": "https://tailwindcss.com/"
+                                    },
+                                    "content": [
+                                        {
+                                            "nodeType": "text",
+                                            "value": "world",
+                                            "marks": [],
+                                            "data": {}
+                                        }
+                                    ]
+                                },
+                                {
+                                    "nodeType": "text",
+                                    "value": ".",
+                                    "marks": [],
+                                    "data": {}
                                 }
-                            ],
-                            "nodeType": "paragraph"
+                            ]
                         },
                         {
+                            "nodeType": "embedded-entry-block",
                             "data": {
                                 "target": {
                                     "sys": {
-                                        "id": "52F7DFCBB5SHkRPOsqxRN",
+                                        "id": "5MQ6wEY5qAZgGo2XtDpcnS",
                                         "type": "Link",
                                         "linkType": "Entry"
                                     }
                                 }
                             },
-                            "content": [],
-                            "nodeType": "embedded-entry-block"
+                            "content": []
                         },
                         {
+                            "nodeType": "paragraph",
                             "data": {},
                             "content": [
                                 {
-                                    "data": {},
+                                    "nodeType": "text",
+                                    "value": "Another way that AR will change our lives is by providing us with instant access to information. Imagine being able to point your phone at a building and immediately see information about its history and architectural significance. Or being able to scan an object and see a detailed description of its features and functions. With AR, all of this will be possible, giving us access to a wealth of knowledge at our fingertips.\nAR will also change the way we shop. Today, online shopping allows us to browse and purchase items from the comfort of our own homes. In the future, AR will make this experience even more immersive by allowing us to see how items look and fit in our own space before we make a purchase. This will make shopping faster, easier, and more convenient than ever before.",
                                     "marks": [],
-                                    "value": "One key component of green urbanism is the use of green space. This can include parks, gardens, and other natural areas within the city. Not only do green spaces provide important habitats for wildlife, but they also provide important social and psychological benefits for city residents. Green spaces can help to reduce stress, improve mental health, and provide opportunities for physical activity and social interaction.\nAnother important aspect of green urbanism is the use of sustainable building materials and design. This can include the use of recycled materials, energy-efficient design, and renewable energy sources. By incorporating sustainable design principles, cities can reduce their environmental impact and create buildings that are healthier and more comfortable for occupants.",
-                                    "nodeType": "text"
+                                    "data": {}
                                 }
-                            ],
-                            "nodeType": "paragraph"
+                            ]
                         },
                         {
+                            "nodeType": "embedded-entry-block",
                             "data": {
                                 "target": {
                                     "sys": {
-                                        "id": "10e0OyHKj1icVwnppWKZUa",
+                                        "id": "2xCfDCfrQzCzzCtL0CfMZd",
                                         "type": "Link",
                                         "linkType": "Entry"
                                     }
                                 }
                             },
-                            "content": [],
-                            "nodeType": "embedded-entry-block"
+                            "content": []
                         },
                         {
+                            "nodeType": "paragraph",
                             "data": {},
                             "content": [
                                 {
-                                    "data": {},
+                                    "nodeType": "text",
+                                    "value": "Finally, AR has the potential to revolutionize the way we learn. Today, we often rely on books, lectures, and other static forms of education to gain knowledge. In the future, AR will make learning more interactive and engaging. For example, students could use AR to explore virtual environments and learn about different subjects in a hands-on way. This could make learning more fun and effective, and could even help to break down barriers to education for people who face challenges in a traditional learning environment.\nOverall, the future is looking bright for AR technology. By 2050, it's likely to be a pervasive part of our daily lives, enhancing the way we communicate, access information, shop, and learn. It's an exciting time to be alive, and we can't wait to see what the future holds for AR and other cutting-edge technologies.",
                                     "marks": [],
-                                    "value": "In addition to these physical elements, green urbanism also emphasizes the importance of sustainable transportation. This can include the use of public transportation, walking, and biking as alternatives to driving. By promoting sustainable transportation options, cities can reduce air and noise pollution, improve public health, and make the city more livable for residents.\nOverall, the concept of green urbanism offers a holistic approach to creating sustainable cities. By integrating natural elements and environmentally-friendly design, cities can become more sustainable, livable, and enjoyable for residents.",
-                                    "nodeType": "text"
+                                    "data": {}
                                 }
-                            ],
-                            "nodeType": "paragraph"
+                            ]
                         },
                         {
+                            "nodeType": "embedded-entry-block",
                             "data": {
                                 "target": {
                                     "sys": {
-                                        "id": "6tOGPe1Z8jQggiGMP5gTMR",
+                                        "id": "2HkPQmxT6XQvzkW82KvoPL",
                                         "type": "Link",
                                         "linkType": "Entry"
                                     }
                                 }
                             },
-                            "content": [],
-                            "nodeType": "embedded-entry-block"
+                            "content": []
                         },
                         {
+                            "nodeType": "paragraph",
                             "data": {},
                             "content": [
                                 {
-                                    "data": {},
-                                    "marks": [],
+                                    "nodeType": "text",
                                     "value": "",
-                                    "nodeType": "text"
+                                    "marks": [],
+                                    "data": {}
                                 }
-                            ],
-                            "nodeType": "paragraph"
+                            ]
                         }
-                    ],
-                    "nodeType": "document"
+                    ]
                 },
                 "relatedBlogPosts": [
                     {
                         "sys": {
                             "type": "Link",
                             "linkType": "Entry",
-                            "id": "5MKo3CM9iXNJxQ0zN5LM0D"
+                            "id": "24K074hJ0Wjoh9Lq4cyWdd"
                         }
                     },
                     {
                         "sys": {
                             "type": "Link",
                             "linkType": "Entry",
-                            "id": "24K074hJ0Wjoh9Lq4cyWdd"
+                            "id": "4YpnxRJ6o0uhD0pxY7hHRF"
                         }
                     }
                 ]
             }
-        }        
+        }
     ],
     "includes": {
         "Entry": [
@@ -316,6 +336,1479 @@
                             "type": "Link",
                             "linkType": "Asset",
                             "id": "2aaddi26T6JGa1649P647b"
+                        }
+                    },
+                    "fullWidth": true
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "1TvUlrZ1PyBgvC4B6n6hMO",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:58.690Z",
+                    "updatedAt": "2024-10-14T17:55:58.690Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "New humanoid robot",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "MhriWI9Mg2japaQXOhDR3"
+                        }
+                    },
+                    "caption": "New humanoid robot",
+                    "fullWidth": false
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "1UZctoNpZyB984wzE48pnc",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:57.677Z",
+                    "updatedAt": "2024-10-14T17:55:57.677Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Quantum orb",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "vs7Sqs8ThbWKUFB5kXRo0"
+                        }
+                    },
+                    "fullWidth": true
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "1hQ6r9lDYSdz33REYcUade",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:56:00.745Z",
+                    "updatedAt": "2024-10-14T17:56:00.745Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentSeo"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Exploring the Intersection of technology and art",
+                    "pageTitle": "Exploring the Intersection of technology and art",
+                    "pageDescription": "How technology is transforming the world of art",
+                    "nofollow": false,
+                    "noindex": false,
+                    "shareImages": [
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Asset",
+                                "id": "gidU2xh7u9rjS8vj5nikT"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "25HBoGoV37t4f9itaLZCXz",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:58.700Z",
+                    "updatedAt": "2024-10-14T17:55:58.700Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "3D Model",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "5YVExQYPh0RVxbCn85eWQC"
+                        }
+                    },
+                    "caption": "3D Model",
+                    "fullWidth": false
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "2FKqWE8ZHfL0YsX9dbhOwx",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:56:01.674Z",
+                    "updatedAt": "2024-10-14T17:56:01.674Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentSeo"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Introducing the latest and greatest tools for developers",
+                    "pageTitle": "Introducing the latest and greatest tools for developers",
+                    "pageDescription": "New developer tools empower to build the next generation of applications",
+                    "nofollow": false,
+                    "noindex": false,
+                    "shareImages": [
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Asset",
+                                "id": "45LAhLfStKVYXM1Bvf8zFa"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "2HkPQmxT6XQvzkW82KvoPL",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:56.465Z",
+                    "updatedAt": "2024-10-14T17:55:56.465Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Cyber City",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "4IKGmZzgz59j3l2qBZ3axm"
+                        }
+                    },
+                    "fullWidth": true
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "2OIC2drzjXNNPebsBcIwom",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:56:00.699Z",
+                    "updatedAt": "2024-10-14T17:56:00.699Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentSeo"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Humanoids Take the Stage: The Growing Role of Human-Like Robots in Society",
+                    "pageTitle": "Humanoids Take the Stage: The Growing Role of Human-Like Robots in Society",
+                    "pageDescription": "Humanoid robots poised to revolutionize the way we live and work",
+                    "nofollow": false,
+                    "noindex": false,
+                    "shareImages": [
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Asset",
+                                "id": "2kkoqnUUjSejsynR4j0TUG"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "2xCfDCfrQzCzzCtL0CfMZd",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:56.450Z",
+                    "updatedAt": "2024-10-14T17:55:56.450Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Learning with Augmented Reality",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "6laYXsjvzeNDmSoh27xedQ"
+                        }
+                    },
+                    "caption": "Learning with AR",
+                    "fullWidth": false
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "362ZZAz4NykPIOtnT5Xzfe",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:54.438Z",
+                    "updatedAt": "2024-10-14T17:55:54.438Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentSeo"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "How AR will transform our lives in 2050 SEO",
+                    "pageTitle": "How AR will transform our lives in 2050",
+                    "pageDescription": "Augmented Reality set to revolutionize daily life in 2050",
+                    "nofollow": false,
+                    "noindex": false,
+                    "shareImages": [
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Asset",
+                                "id": "45I6aJDqIZzFWkPTmhHVDl"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "3Pbauu8CMccULge31GTKro",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:57.675Z",
+                    "updatedAt": "2024-10-14T17:55:57.675Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Robots in manufacturing",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "3uCsWf52cDTEB7w0nJ7pl5"
+                        }
+                    },
+                    "caption": "Robots in manufacturing",
+                    "fullWidth": false
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "3wOG0oti9LBNl6kBDpGSul",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:54.435Z",
+                    "updatedAt": "2024-10-14T17:55:54.435Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentAuthor"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Jaydon Curtis",
+                    "name": "Jaydon Curtis",
+                    "avatar": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "1zmcQeiaH7LfUovnozSjtY"
+                        }
+                    }
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "3wTmt1f14xsvuYAVI0Ld4l",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:57.698Z",
+                    "updatedAt": "2024-10-14T17:55:57.698Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Fast computation",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "Y9mPbDns5OMVSMvRx8M61"
+                        }
+                    },
+                    "caption": "Fast computation",
+                    "fullWidth": false
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "472rC81wxLIHXBZHFmET33",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:58.689Z",
+                    "updatedAt": "2024-10-14T17:55:58.689Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "3D Model Head",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "1VNqaLgI8xecTahqYRvWC8"
+                        }
+                    },
+                    "fullWidth": true
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "4hjlJX04OL8aR17QgbDmOE",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:55.449Z",
+                    "updatedAt": "2024-10-14T17:55:55.449Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentAuthor"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Skylar Geidt",
+                    "name": "Skylar Geidt",
+                    "avatar": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "DCX5igdj3acW1jo6Nkkoc"
+                        }
+                    }
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "4oasJqAzKmD7XMoVNu60US",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:56:00.737Z",
+                    "updatedAt": "2024-10-14T17:56:00.737Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentSeo"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Quantum computing: how it works and what it means for the future",
+                    "pageTitle": "Quantum computing: how it works and what it means for the future",
+                    "pageDescription": "Quantum computing set to revolutionize the world of computing ",
+                    "nofollow": false,
+                    "noindex": false,
+                    "shareImages": [
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Asset",
+                                "id": "617p75z6jeeCQxn1nrWMRp"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "4uO8cuuJOWNPyyqFuBBGyv",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:56.468Z",
+                    "updatedAt": "2024-10-14T17:55:56.468Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Flowers and code",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "qZ4sbxBopTOPti4OjknTK"
+                        }
+                    },
+                    "caption": "Coding",
+                    "fullWidth": false
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "52F7DFCBB5SHkRPOsqxRN",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:59.701Z",
+                    "updatedAt": "2024-10-14T17:55:59.701Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Green spaces in cities",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "1LebM1daMxNo7SMS5kscjt"
+                        }
+                    },
+                    "caption": "Green spaces in cities",
+                    "fullWidth": false
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "553eaMuOv2nmaNsjyp227I",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:58.702Z",
+                    "updatedAt": "2024-10-14T17:55:58.702Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Humanoid robot 1.0",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "1ZJ2s2JDgJMhuf87j3Chnd"
+                        }
+                    },
+                    "caption": "Humanoid robot 1.0",
+                    "fullWidth": false
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "5KXfK8CGM8Ziw0cyyNEWq5",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:57.700Z",
+                    "updatedAt": "2024-10-14T17:55:57.700Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Piano robot",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "2SBZUsH1iQmSqJZBHvlPk2"
+                        }
+                    },
+                    "fullWidth": true
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "5MQ6wEY5qAZgGo2XtDpcnS",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:55.484Z",
+                    "updatedAt": "2024-10-14T17:55:55.484Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Instant access to information (Augmented Reality)",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "7CxNr9Arb299R7KjO103Bt"
+                        }
+                    },
+                    "caption": "Instant access to information",
+                    "fullWidth": false
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "5pJhJPUcTzpAL9ZPeXL7hr",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:54.429Z",
+                    "updatedAt": "2024-10-14T17:55:54.429Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentAuthor"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Livia Dokidis",
+                    "name": "Livia Dokidis",
+                    "avatar": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "4HvHLkOxKlWEteCoTsIact"
+                        }
+                    }
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "6Kx8YSKbtQ7PVsLjgPXVlv",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:56:00.727Z",
+                    "updatedAt": "2024-10-14T17:56:00.727Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentSeo"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Creating sustainable cities and the role of green urbanism",
+                    "pageTitle": "Creating sustainable cities and the role of green urbanism",
+                    "pageDescription": "Green urbanism: a key strategy for creating sustainable cities ",
+                    "nofollow": false,
+                    "noindex": false,
+                    "shareImages": [
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Asset",
+                                "id": "2bcP5YjjO6orgVf2ClwVna"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "6eewIcO2YVzOGVQR4XJBD2",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:55.463Z",
+                    "updatedAt": "2024-10-14T17:55:55.463Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentAuthor"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Dulce Curtis",
+                    "name": "Dulce Curtis",
+                    "avatar": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "79jZojREuNA5pTKnZgyTOu"
+                        }
+                    }
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "6jOJiidbjYGogmsWsfDksc",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:56:01.683Z",
+                    "updatedAt": "2024-10-14T17:56:01.683Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentSeo"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "The rise of robots: how advanced technology is changing",
+                    "pageTitle": "The rise of robots: how advanced technology is changing",
+                    "pageDescription": "Robots set to take on more complex tasks in the future",
+                    "nofollow": false,
+                    "noindex": false,
+                    "shareImages": [
+                        {
+                            "sys": {
+                                "type": "Link",
+                                "linkType": "Asset",
+                                "id": "6KL2h91Rvd9ZBGOUUhDNE9"
+                            }
+                        }
+                    ]
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "6tOGPe1Z8jQggiGMP5gTMR",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:59.754Z",
+                    "updatedAt": "2024-10-14T17:55:59.754Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Layered green space on a building",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "MJzD451juWJq7H1mufYAY"
+                        }
+                    },
+                    "fullWidth": true
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "7HUansHtgxfYfoy9mlDZAs",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:57.698Z",
+                    "updatedAt": "2024-10-14T17:55:57.698Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Micro robots",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "2ezfM3gUJuFKradR9JgYE5"
+                        }
+                    },
+                    "caption": "Micro robots",
+                    "fullWidth": false
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "7c8KzxSgPMy1oYD38nvi5z",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:55.446Z",
+                    "updatedAt": "2024-10-14T17:55:55.446Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentAuthor"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Omar Franci",
+                    "name": "Omar Franci",
+                    "avatar": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "grDkL5SqN1MKnbaW7cHDG"
+                        }
+                    }
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "7rAZWyI3JIs16mmGJT5KXZ",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:55.458Z",
+                    "updatedAt": "2024-10-14T17:55:55.458Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentAuthor"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Livia Philips",
+                    "name": "Livia Philips",
+                    "avatar": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "4cuTBzzLIp02ts0VOF1mUS"
+                        }
+                    }
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "YLMOhc8JAsSHkB0swXTjP",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:58.689Z",
+                    "updatedAt": "2024-10-14T17:55:58.689Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "3D Model Hand",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "5CH2WqvlyAkgte2cUO8eZf"
+                        }
+                    },
+                    "caption": "3D Model",
+                    "fullWidth": false
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "cHssem6vejsJMMVokFThl",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:57.685Z",
+                    "updatedAt": "2024-10-14T17:55:57.685Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Quantum computing chip",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "73Vy6f7QzW2Nls2m6SZRFM"
+                        }
+                    },
+                    "caption": "Quantum computing",
+                    "fullWidth": false
+                }
+            },
+            {
+                "metadata": {
+                    "tags": [],
+                    "concepts": []
+                },
+                "sys": {
+                    "space": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Space",
+                            "id": "cr38m15s8b6l"
+                        }
+                    },
+                    "id": "q6S9EtuaIEIK5vjNCaCJp",
+                    "type": "Entry",
+                    "createdAt": "2024-10-14T17:55:58.688Z",
+                    "updatedAt": "2024-10-14T17:55:58.688Z",
+                    "environment": {
+                        "sys": {
+                            "id": "master",
+                            "type": "Link",
+                            "linkType": "Environment"
+                        }
+                    },
+                    "revision": 1,
+                    "contentType": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "ContentType",
+                            "id": "componentRichImage"
+                        }
+                    },
+                    "locale": "en-US"
+                },
+                "fields": {
+                    "internalName": "Humanoid joint",
+                    "image": {
+                        "sys": {
+                            "type": "Link",
+                            "linkType": "Asset",
+                            "id": "vjf9MSkYxA7rmchYemRrc"
                         }
                     },
                     "fullWidth": true

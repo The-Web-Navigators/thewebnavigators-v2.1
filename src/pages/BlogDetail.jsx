@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { createClient } from 'contentful';
 import SEO from '../components/react/SEO';
-import { documentToHtmlString } from '@contentful/rich-text-html-renderer'; // Import the function
+import RichText from '../components/react/RichText'; // Import the RichText component
 
 export default function BlogDetail() {
     const { slug } = useParams();
@@ -11,14 +11,14 @@ export default function BlogDetail() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    // Contentful client setup
-    const client = createClient({
-        space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
-        accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN,
-        host: process.env.REACT_APP_CONTENTFUL_PREVIEW === 'true' ? 'preview.contentful.com' : 'cdn.contentful.com'
-    });
-
     useEffect(() => {
+        // Contentful client setup
+        const client = createClient({
+            space: process.env.REACT_APP_CONTENTFUL_SPACE_ID,
+            accessToken: process.env.REACT_APP_CONTENTFUL_ACCESS_TOKEN,
+            host: process.env.REACT_APP_CONTENTFUL_PREVIEW === 'true' ? 'preview.contentful.com' : 'cdn.contentful.com'
+        });
+
         // Fetch the blog post by slug
         client.getEntries({
             content_type: 'pageBlogPost',
@@ -66,8 +66,8 @@ export default function BlogDetail() {
                         Published on: {new Date(blog.fields.publishedDate).toLocaleDateString()}
                     </p>
                     <div className='mt-6'>
-                        {/* Render blog content */}
-                        <div dangerouslySetInnerHTML={{ __html: documentToHtmlString(blog.fields.content) }} />
+                        {/* Use RichText component to render blog content */}
+                        <RichText content={blog.fields.content} />
                     </div>
                 </div>
             </div>
