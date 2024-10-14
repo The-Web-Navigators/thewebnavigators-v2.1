@@ -49,8 +49,8 @@ export default function Blogs() {
                     twitterImage="https://thewebnavigators.com/twitter-image.png"
                 />
             )}
-            <div className='mt-20 container mx-auto px-6 lg:px-0 grid grid-cols-4'>
-                <div className='col-span-3 min-h-screen'>
+            <div className='mt-20 container mx-auto px-6 lg:px-0 grid grid-cols-1 xl:grid-cols-4'>
+                <div className='xl:col-span-3 min-h-screen'>
                     <h1 className='bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-5xl font-medium leading-none tracking-tighter text-transparent sm:text-5xl md:text-6xl lg:text-7xl capitalize'>Blogs</h1>
 
                     {loading && <p>Loading...</p>}
@@ -63,17 +63,16 @@ export default function Blogs() {
                     {!loading && !error && blogs.map((blog) => (
                         <div
                             key={blog.sys.id}
-                            className='mt-4 grid grid-cols-8 items-start gap-4 shadow-lg p-2 rounded-lg cursor-pointer group'
-                            onClick={() => handleBlogClick(blog.fields.slug)} // Add onClick event
-                        >
-                            <div className='col-span-2'>
+                            className='mt-4 grid grid-cols-1 xl:grid-cols-8 items-start gap-4 shadow-lg p-2 rounded-lg cursor-pointer group'
+                            onClick={() => handleBlogClick(blog.fields.slug)}>
+                            <div className='xl:col-span-2'>
                                 <img
                                     className='w-full h-36 object-cover rounded-lg group-hover:scale-95 transition-all ease-in-out duration-300'
                                     src={blog.fields.featuredImage?.fields.file.url}
                                     alt={blog.fields.title}
                                 />
                             </div>
-                            <div className='col-span-6 flex flex-col items-start gap-2'>
+                            <div className='xl:col-span-6 flex flex-col items-start gap-2'>
                                 <h2 className='bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-2xl font-medium leading-none tracking-tighter text-transparent capitalize'>
                                     {blog.fields.title}
                                 </h2>
