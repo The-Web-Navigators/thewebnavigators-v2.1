@@ -23,7 +23,7 @@ export default function ProjectOverView() {
     const projectItem = portfolioItems.find(item => createSlug(item.title) === projectTitle);
 
     return (
-        <div className="mt-16 container mx-auto px-6 md:px-8">
+        <div className="mt-16 container mx-auto px-6 lg:px-0">
             {projectItem && <SafariComponent src={projectItem.imgSrc} url={projectItem.href} />}
             <div className='grid grid-cols-1 xl:grid-cols-4 gap-12 xl:gap-2 pt-12'>
                 <div className='xl:col-span-3 flex flex-col gap-6'>

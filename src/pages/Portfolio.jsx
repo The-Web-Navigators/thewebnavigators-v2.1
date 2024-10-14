@@ -77,7 +77,7 @@ function Portfolio() {
           </div>
         ) : (
           <motion.div
-            className="mt-8 grid grid-cols-2 xl:grid-cols-3 gap-6 container mx-auto px-6 md:px-8"
+            className="mt-8 grid grid-cols-2 xl:grid-cols-3 gap-6 container mx-auto px-6 lg:px-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: "easeInOut", duration: 1, delay: 0.8 }}>

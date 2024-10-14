@@ -53,7 +53,7 @@ export default function Home() {
                 />
             )}
 
-            <section id='hero' className='relative pt-32 mx-auto h-screen px-6 md:px-8 flex flex-col items-center overflow-hidden'>
+            <section id='hero' className='relative pt-32 mx-auto h-screen px-6 lg:px-0 flex flex-col items-center overflow-hidden'>
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -132,7 +132,7 @@ export default function Home() {
                 <RetroGrid className='-z-10' />
             </section>
 
-            <section id="clients" className="mt-32 container mx-auto px-6 md:px-8">
+            <section id="clients" className="mt-32 container mx-auto px-6 lg:px-0">
                 <h2 className="text-sm font-semibold text-gray-400 text-center">TRUSTED BY CLIENTS FROM AROUND THE WORLD</h2>
                 <div className="mt-6">
                     <div className="flex flex-wrap items-center justify-center gap-x-10 gap-y-6 md:gap-x-16 [&_path]:fill-white">

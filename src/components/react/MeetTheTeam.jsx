@@ -31,7 +31,7 @@ const MeetTheTeam = () => {
     ];
 
     return (
-        <div className="mt-44 container mx-auto px-6 md:px-8">
+        <div className="mt-44 container mx-auto px-6 lg:px-0">
             <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
                 <div className='flex flex-col items-center xl:items-start gap-4'>
                     <h2 className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-3xl font-medium leading-none tracking-tighter text-transparent sm:text-3xl md:text-4xl lg:text-5xl">

@@ -27,7 +27,7 @@ export default function WhatWeDo() {
         />
       )}
 
-      <section className='mt-32 container mx-auto px-6 md:px-8'>
+      <section className='mt-32 container mx-auto px-6 lg:px-0'>
         <div className='w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24 items-center justify-center'>
           <IconCloudComponent />
           <div className='w-full h-fit flex flex-col'>
