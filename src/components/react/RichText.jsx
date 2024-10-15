@@ -5,6 +5,7 @@ import { createClient } from 'contentful';
 
 const RichText = ({ content }) => {
     const [assets, setAssets] = useState({});
+    console.log(content)
 
     useEffect(() => {
         const client = createClient({
@@ -21,7 +22,7 @@ const RichText = ({ content }) => {
                         id: entryId,
                         title: entry.fields.title || '',
                         content: entry.fields.content || {},
-                        image: entry.fields.image || null, 
+                        image: entry.fields.image || null,
                     }));
                 });
 
@@ -40,18 +41,18 @@ const RichText = ({ content }) => {
 
     const options = {
         renderNode: {
-            [BLOCKS.PARAGRAPH]: (node) => (
-                <p className="my-4 text-gray-600">{node.content.map((textNode) => textNode.value).join('')}</p>
+            [BLOCKS.PARAGRAPH]: (node, children) => (
+                <p className="my-4 text-gray-600 leading-relaxed">{children}</p>
             ),
-            [BLOCKS.HEADING_1]: (node) => <h1 className="text-2xl font-bold my-4">{node.content[0]?.value}</h1>,
-            [BLOCKS.HEADING_2]: (node) => <h2 className="text-xl font-bold my-4">{node.content[0]?.value}</h2>,
-            [BLOCKS.HEADING_3]: (node) => <h3 className="text-lg font-bold my-4">{node.content[0]?.value}</h3>,
-            [BLOCKS.HEADING_4]: (node) => <h4 className="text-md font-bold my-4">{node.content[0]?.value}</h4>,
-            [BLOCKS.HEADING_5]: (node) => <h5 className="text-sm font-bold my-4">{node.content[0]?.value}</h5>,
-            [BLOCKS.HEADING_6]: (node) => <h6 className="text-xs font-bold my-4">{node.content[0]?.value}</h6>,
-            [INLINES.HYPERLINK]: (node) => (
+            [BLOCKS.HEADING_1]: (node, children) => <h1 className="text-2xl font-bold my-4">{children}</h1>,
+            [BLOCKS.HEADING_2]: (node, children) => <h2 className="text-xl font-bold my-4">{children}</h2>,
+            [BLOCKS.HEADING_3]: (node, children) => <h3 className="text-lg font-bold my-4">{children}</h3>,
+            [BLOCKS.HEADING_4]: (node, children) => <h4 className="text-md font-bold my-4">{children}</h4>,
+            [BLOCKS.HEADING_5]: (node, children) => <h5 className="text-sm font-bold my-4">{children}</h5>,
+            [BLOCKS.HEADING_6]: (node, children) => <h6 className="text-xs font-bold my-4">{children}</h6>,
+            [INLINES.HYPERLINK]: (node, children) => (
                 <a href={node.data.uri} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
-                    {node.content[0]?.value}
+                    {children}
                 </a>
             ),
             [BLOCKS.EMBEDDED_ENTRY]: (node) => {
@@ -62,39 +63,40 @@ const RichText = ({ content }) => {
                     return (
                         <div className="my-8">
                             <h3 className="text-xl font-bold">{entry.title}</h3>
-                            {entry.image && (
+                            {entry.image && entry.image.fields && (
                                 <img
                                     src={`https:${entry.image.fields.file.url}`}
                                     alt={entry.image.fields.title || "Embedded image"}
-                                    className="w-full h-[500px] object-cover rounded-lg" // Full width, 500px height, cover
+                                    className="w-full h-[500px] object-cover rounded-lg"
                                 />
                             )}
-                            {entry.content && entry.content.content && documentToReactComponents(entry.content)}
+                            {entry.content && entry.content.content && (
+                                <div className="mt-4">
+                                    {documentToReactComponents(entry.content, options)}
+                                </div>
+                            )}
                         </div>
                     );
                 }
 
-                return <p>Loading...</p>; // Show loading text until the entry is fetched
+                return <p>Loading...</p>;
             },
-            [BLOCKS.QUOTE]: (node) => (
+            [BLOCKS.QUOTE]: (node, children) => (
                 <blockquote className="border-l-4 border-gray-300 pl-4 italic my-4">
-                    {node.content.map((textNode) => textNode.value).join('')}
+                    {children}
                 </blockquote>
             ),
-            [BLOCKS.UL_LIST]: (node) => (
+            [BLOCKS.UL_LIST]: (node, children) => (
                 <ul className="list-disc pl-5 my-4">
-                    {node.content.map((listItem, index) => (
-                        <li key={index}>{documentToReactComponents(listItem.content)}</li>
-                    ))}
+                    {children}
                 </ul>
             ),
-            [BLOCKS.OL_LIST]: (node) => (
+            [BLOCKS.OL_LIST]: (node, children) => (
                 <ol className="list-decimal pl-5 my-4">
-                    {node.content.map((listItem, index) => (
-                        <li key={index}>{documentToReactComponents(listItem.content)}</li>
-                    ))}
+                    {children}
                 </ol>
             ),
+            [BLOCKS.LIST_ITEM]: (node, children) => <li className="my-2">{children}</li>,
         },
     };
 

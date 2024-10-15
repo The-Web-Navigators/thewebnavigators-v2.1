@@ -1,4 +1,3 @@
-// BlogDetail.jsx
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { createClient } from 'contentful';
@@ -8,6 +7,7 @@ import RichText from '../components/react/RichText'; // Import the RichText comp
 export default function BlogDetail() {
     const { slug } = useParams();
     const [blog, setBlog] = useState(null);
+    const [author, setAuthor] = useState(null); // State to store author data
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
@@ -26,7 +26,16 @@ export default function BlogDetail() {
         })
             .then((response) => {
                 if (response.items.length > 0) {
-                    setBlog(response.items[0]);
+                    const blogPost = response.items[0];
+                    setBlog(blogPost);
+
+                    // Fetch the author information
+                    const authorId = blogPost.fields.author.sys.id;
+                    client.getEntry(authorId).then((authorEntry) => {
+                        setAuthor(authorEntry);
+                    }).catch((error) => {
+                        console.error('Error fetching author:', error);
+                    });
                 } else {
                     setError('Blog not found');
                 }
@@ -63,7 +72,7 @@ export default function BlogDetail() {
                         alt={blog.fields.title}
                     />
                     <p className='mt-4 text-sm text-gray-500'>
-                        Published on: {new Date(blog.fields.publishedDate).toLocaleDateString()}
+                        Published By: {author?.fields?.name || 'The Web Navigators'} on {new Date(blog.fields.publishedDate).toLocaleDateString('en-GB').replace(/\//g, '-')}
                     </p>
                     <div className='mt-6'>
                         {/* Use RichText component to render blog content */}
