@@ -42,7 +42,7 @@ const RichText = ({ content }) => {
     const options = {
         renderNode: {
             [BLOCKS.PARAGRAPH]: (node, children) => (
-                <p className="my-4 text-gray-600 leading-relaxed">{children}</p>
+                <p className="my-4 text-gray-600 dark:text-gray-300 leading-relaxed">{children}</p>
             ),
             [BLOCKS.HEADING_1]: (node, children) => <h1 className="text-2xl font-bold my-4">{children}</h1>,
             [BLOCKS.HEADING_2]: (node, children) => <h2 className="text-xl font-bold my-4">{children}</h2>,
@@ -67,7 +67,7 @@ const RichText = ({ content }) => {
                                 <img
                                     src={`https:${entry.image.fields.file.url}`}
                                     alt={entry.image.fields.title || "Embedded image"}
-                                    className="w-full h-[500px] object-cover rounded-lg"
+                                    className="w-full h-[450px] object-cover rounded-lg"
                                 />
                             )}
                             {entry.content && entry.content.content && (
