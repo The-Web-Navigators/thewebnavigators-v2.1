@@ -63,7 +63,8 @@ export default function BlogDetail() {
                 twitterCard="summary_large_image"
                 twitterImage={blog.fields.featuredImage?.fields.file.url}
             />
-            <div className='mt-20 container mx-auto px-6 lg:px-0 grid grid-cols-1 xl:grid-cols-8'>
+            <div className='mt-20 container mx-auto px-6 lg:px-0 grid grid-cols-1 xl:grid-cols-10'>
+                <div className='xl:col-span-2'></div>
                 <div className='xl:col-span-6'>
                     <h1 className='bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-3xl font-medium leading-none tracking-tighter text-transparent sm:text-4xl md:text-5xl lg:text-6xl capitalize'>{blog.fields.title}</h1>
                     <img
@@ -79,6 +80,7 @@ export default function BlogDetail() {
                         <RichText content={blog.fields.content} />
                     </div>
                 </div>
+                <div className='xl:col-span-2'></div>
             </div>
         </>
     );
