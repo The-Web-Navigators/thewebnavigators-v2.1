@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Home Page -->
+    <url>
+        <loc>https://thewebnavigators.com/</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+    
+    <!-- What We Do Page -->
+    <url>
+        <loc>https://thewebnavigators.com/what-we-do</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <!-- Portfolio Page -->
+    <url>
+        <loc>https://thewebnavigators.com/portfolio</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <!-- Portfolio Items -->
+    <url>
+        <loc>https://thewebnavigators.com/portfolio/ai-image-restyle</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://thewebnavigators.com/portfolio/ai-outreach-tool</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://thewebnavigators.com/portfolio/gu-wi-admin-dashboard</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://thewebnavigators.com/portfolio/studio-proper</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://thewebnavigators.com/portfolio/gu-wi-quote-builder</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://thewebnavigators.com/portfolio/rainfire-e-commerce</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://thewebnavigators.com/portfolio/compressor-io</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://thewebnavigators.com/portfolio/durable</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://thewebnavigators.com/portfolio/image-creator</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://thewebnavigators.com/portfolio/sidebird-io</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://thewebnavigators.com/portfolio/luxy-hair</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://thewebnavigators.com/portfolio/jp-lewis-group-llc</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.8</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+
+    <!-- Blogs Pages -->
+    <url>
+        <loc>https://thewebnavigators.com/blogs</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.9</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+
+    <!-- Blog Details -->
+    <url>
+        <loc>https://thewebnavigators.com/blogs/the-future-of-ai-in-web-development</loc>
+        <lastmod>2024-11-13</lastmod>
+        <priority>0.7</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+
+</urlset>
