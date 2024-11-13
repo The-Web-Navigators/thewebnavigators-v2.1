@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom'; // Import useNavigate
 import SEO from '../components/react/SEO';
 import { createClient } from 'contentful';
+import { motion } from 'framer-motion';
 
 export default function Blogs() {
     const location = useLocation();
@@ -37,7 +38,7 @@ export default function Blogs() {
 
     return (
         <div className='min-h-screen'>
-             {loading && (
+            {loading && (
                 <div role="status" className='mt-96 w-fit mx-auto'>
                     <svg aria-hidden="true" className="inline w-5 h-5 text-black animate-spin fill-white" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor" />
@@ -62,20 +63,21 @@ export default function Blogs() {
                     )}
                     <div className='mt-20 container mx-auto px-6 lg:px-0 grid grid-cols-1 xl:grid-cols-4'>
                         <div className='xl:col-span-3 min-h-screen'>
-                            <h1 className='bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-5xl font-medium leading-none tracking-tighter text-transparent sm:text-5xl md:text-6xl lg:text-7xl capitalize'>Blogs</h1>
-
-                            {loading && <p>Loading...</p>}
-                            {error && <p className='text-red-500'>{error}</p>}
-
-                            {!loading && !error && blogs.length === 0 && (
-                                <p>No blogs available at the moment.</p>
-                            )}
-
+                            <motion.h1
+                                className='bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-5xl font-medium leading-none tracking-tighter text-transparent sm:text-5xl md:text-6xl lg:text-7xl capitalize'
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}>
+                                Blogs
+                            </motion.h1>
                             {!loading && !error && blogs.map((blog) => (
-                                <div
+                                <motion.div
                                     key={blog.sys.id}
                                     className='mt-4 grid grid-cols-1 xl:grid-cols-8 items-start gap-4 shadow-lg p-2 rounded-lg cursor-pointer group'
-                                    onClick={() => handleBlogClick(blog.fields.slug)}>
+                                    onClick={() => handleBlogClick(blog.fields.slug)}
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ ease: "easeInOut", duration: 1, delay: 0.8 }}>
                                     <div className='xl:col-span-2'>
                                         <img
                                             className='w-full h-36 object-cover rounded-lg group-hover:scale-95 transition-all ease-in-out duration-300'
@@ -94,7 +96,7 @@ export default function Blogs() {
                                             Published on: {new Date(blog.fields.publishedDate).toLocaleDateString()}
                                         </p>
                                     </div>
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
                     </div>

@@ -50,16 +50,16 @@ function Portfolio() {
         />
       )}
 
-      <section id="portfolio" className="mt-28">
+      <section id="portfolio" className={`mt-20 ${isHome ? '' : 'container mx-auto'}`}>
         <motion.h2
-          className="bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-center py-2 text-5xl font-medium text-transparent tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl"
+          className={`bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text py-2 text-5xl font-medium text-transparent tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl ${isHome ? 'text-center' : ''}`}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ ease: "easeInOut", duration: 1, delay: 0.4 }}>
           Portfolio
         </motion.h2>
         <motion.h3
-          className="mt-2 text-lg tracking-tight text-gray-400 text-balance text-center md:text-xl"
+          className={`mt-2 text-lg tracking-tight text-gray-400 text-balance md:text-xl ${isHome ? 'text-center' : ''}`}
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeInOut", duration: 1, delay: 0.2 }}>
@@ -77,7 +77,7 @@ function Portfolio() {
           </div>
         ) : (
           <motion.div
-            className="mt-8 grid grid-cols-2 xl:grid-cols-3 gap-6 container mx-auto px-6 lg:px-0"
+            className="mt-8 grid grid-cols-2 xl:grid-cols-3 gap-6 px-6 lg:px-0"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ ease: "easeInOut", duration: 1, delay: 0.8 }}>
