@@ -75,10 +75,6 @@
   /* UltraBlack */
 }
 
-* {
-  user-select: none;
-}
-
 .light {
   @apply bg-white transition-colors ease-in-out duration-500;
 }
