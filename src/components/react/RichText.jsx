@@ -96,6 +96,9 @@ const RichText = ({ content }) => {
                 </ol>
             ),
             [BLOCKS.LIST_ITEM]: (node, children) => <li className="my-2">{children}</li>,
+            [BLOCKS.HR]: () => (
+                <hr className="my-12 border-t-[0.50px] border-gray-300 dark:border-gray-700" />
+            ),
         },
     };
 
