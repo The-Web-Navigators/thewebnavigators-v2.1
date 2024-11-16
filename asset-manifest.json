@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.79ea1dfc.css",
-    "main.js": "/static/js/main.5d621e8e.js",
+    "main.css": "/static/css/main.301a0eda.css",
+    "main.js": "/static/js/main.43cb6857.js",
     "static/media/Luxy-Hair.png": "/static/media/Luxy-Hair.b7518a687b288cfa642e.png",
     "static/media/Proper.png": "/static/media/Proper.d0c67daf3a0ec0fc3683.png",
     "static/media/client-daniel.png": "/static/media/client-daniel.e8c100af7701c4e5f3aa.png",
@@ -40,11 +40,11 @@
     "static/media/jatin.jpeg": "/static/media/jatin.c93e270f4c118db17a72.jpeg",
     "static/media/redwavevp-logo.png": "/static/media/redwavevp-logo.ebd4fbd0edd5aace8eb1.png",
     "index.html": "/index.html",
-    "main.79ea1dfc.css.map": "/static/css/main.79ea1dfc.css.map",
-    "main.5d621e8e.js.map": "/static/js/main.5d621e8e.js.map"
+    "main.301a0eda.css.map": "/static/css/main.301a0eda.css.map",
+    "main.43cb6857.js.map": "/static/js/main.43cb6857.js.map"
   },
   "entrypoints": [
-    "static/css/main.79ea1dfc.css",
-    "static/js/main.5d621e8e.js"
+    "static/css/main.301a0eda.css",
+    "static/js/main.43cb6857.js"
   ]
 }
