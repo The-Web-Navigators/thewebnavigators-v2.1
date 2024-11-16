@@ -5,7 +5,6 @@ import { createClient } from 'contentful';
 
 const RichText = ({ content }) => {
     const [assets, setAssets] = useState({});
-    console.log(content)
 
     useEffect(() => {
         const client = createClient({
@@ -42,14 +41,59 @@ const RichText = ({ content }) => {
     const options = {
         renderNode: {
             [BLOCKS.PARAGRAPH]: (node, children) => (
-                <p className="my-4 text-gray-600 dark:text-gray-300 leading-relaxed">{children}</p>
+                <>
+                    <p className="my-4 text-gray-600 dark:text-gray-300 leading-relaxed">{children}</p>
+                    <br />
+                </>
             ),
-            [BLOCKS.HEADING_1]: (node, children) => <h1 className="text-4xl my-4 bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text font-medium leading-none tracking-tighter text-transparent  capitalize">{children}</h1>,
-            [BLOCKS.HEADING_2]: (node, children) => <h2 className="text-3xl my-4 bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text font-medium leading-none tracking-tighter text-transparent  capitalize">{children}</h2>,
-            [BLOCKS.HEADING_3]: (node, children) => <h3 className="text-2xl my-4 bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text font-medium leading-none tracking-tighter text-transparent  capitalize">{children}</h3>,
-            [BLOCKS.HEADING_4]: (node, children) => <h4 className="text-xl my-4 bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text font-medium leading-none tracking-tighter text-transparent  capitalize">{children}</h4>,
-            [BLOCKS.HEADING_5]: (node, children) => <h5 className="text-lg my-4 bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text font-medium leading-none tracking-tighter text-transparent  capitalize">{children}</h5>,
-            [BLOCKS.HEADING_6]: (node, children) => <h6 className="text-md my-4 bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text font-medium leading-none tracking-tighter text-transparent  capitalize">{children}</h6>,
+            [BLOCKS.HEADING_1]: (node, children) => (
+                <>
+                    <h1 className="text-4xl my-4 bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text font-medium leading-none tracking-tighter text-transparent capitalize">
+                        {children}
+                    </h1>
+                    <br />
+                </>
+            ),
+            [BLOCKS.HEADING_2]: (node, children) => (
+                <>
+                    <h2 className="text-3xl my-4 bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text font-medium leading-none tracking-tighter text-transparent capitalize">
+                        {children}
+                    </h2>
+                    <br />
+                </>
+            ),
+            [BLOCKS.HEADING_3]: (node, children) => (
+                <>
+                    <h3 className="text-2xl my-4 bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text font-medium leading-none tracking-tighter text-transparent capitalize">
+                        {children}
+                    </h3>
+                    <br />
+                </>
+            ),
+            [BLOCKS.HEADING_4]: (node, children) => (
+                <>
+                    <h4 className="text-xl my-4 bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text font-medium leading-none tracking-tighter text-transparent capitalize">
+                        {children}
+                    </h4>
+                    <br />
+                </>
+            ),
+            [BLOCKS.HEADING_5]: (node, children) => (
+                <>
+                    <h5 className="text-lg my-4 bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text font-medium leading-none tracking-tighter text-transparent capitalize">
+                        {children}
+                    </h5>
+                    <br />
+                </>
+            ),
+            [BLOCKS.HEADING_6]: (node, children) => (
+                <>
+                    <h6 className="text-md my-4 bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text font-medium leading-none tracking-tighter text-transparent capitalize">
+                        {children}
+                    </h6>
+                    <br />
+                </>
+            ),
             [INLINES.HYPERLINK]: (node, children) => (
                 <a href={node.data.uri} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
                     {children}
@@ -62,7 +106,7 @@ const RichText = ({ content }) => {
                 if (entry) {
                     return (
                         <div className="my-8">
-                            <h3 className="text-xl font-bold">{entry.title}</h3>
+                            <h3 className="text-xl font-bold text-gray-600 dark:text-gray-300">{entry.title}</h3>
                             {entry.image && entry.image.fields && (
                                 <img
                                     src={`https:${entry.image.fields.file.url}`}
@@ -82,17 +126,20 @@ const RichText = ({ content }) => {
                 return <p>Loading...</p>;
             },
             [BLOCKS.QUOTE]: (node, children) => (
-                <blockquote className="border-l-4 border-gray-300 pl-4 italic my-4">
-                    {children}
-                </blockquote>
+                <>
+                    <blockquote className="border-l-4 border-gray-300 pl-4 italic my-4 text-gray-600 dark:text-gray-300">
+                        {children}
+                    </blockquote>
+                    <br />
+                </>
             ),
             [BLOCKS.UL_LIST]: (node, children) => (
-                <ul className="list-disc pl-5 my-4">
+                <ul className="list-disc pl-5 my-4 text-gray-600 dark:text-gray-300">
                     {children}
                 </ul>
             ),
             [BLOCKS.OL_LIST]: (node, children) => (
-                <ol className="list-decimal pl-5 my-4">
+                <ol className="list-decimal pl-5 my-4 text-gray-600 dark:text-gray-300">
                     {children}
                 </ol>
             ),
