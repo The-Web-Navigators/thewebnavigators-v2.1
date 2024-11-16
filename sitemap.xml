@@ -114,4 +114,25 @@
         <changefreq>weekly</changefreq>
     </url>
 
+    <url>
+        <loc>https://thewebnavigators.com/blogs/what-is-b2b-saas-meaning-benefits-and-top-companies-to-watch</loc>
+        <lastmod>2024-11-17</lastmod>
+        <priority>0.7</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+
+     <url>
+        <loc>https://thewebnavigators.com/blogs/4-beginner-friendly-ways-to-earn-1000-dollars-monthly-recurring-revenue-online</loc>
+        <lastmod>2024-11-17</lastmod>
+        <priority>0.7</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+
+     <url>
+        <loc>https://thewebnavigators.com/blogs/4-saas-trends-to-watch-in-2025-that-can-save-your-business</loc>
+        <lastmod>2024-11-17</lastmod>
+        <priority>0.7</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+
 </urlset>
