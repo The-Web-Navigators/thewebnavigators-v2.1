@@ -44,12 +44,12 @@ const RichText = ({ content }) => {
             [BLOCKS.PARAGRAPH]: (node, children) => (
                 <p className="my-4 text-gray-600 dark:text-gray-300 leading-relaxed">{children}</p>
             ),
-            [BLOCKS.HEADING_1]: (node, children) => <h1 className="text-2xl font-bold my-4">{children}</h1>,
-            [BLOCKS.HEADING_2]: (node, children) => <h2 className="text-xl font-bold my-4">{children}</h2>,
-            [BLOCKS.HEADING_3]: (node, children) => <h3 className="text-lg font-bold my-4">{children}</h3>,
-            [BLOCKS.HEADING_4]: (node, children) => <h4 className="text-md font-bold my-4">{children}</h4>,
-            [BLOCKS.HEADING_5]: (node, children) => <h5 className="text-sm font-bold my-4">{children}</h5>,
-            [BLOCKS.HEADING_6]: (node, children) => <h6 className="text-xs font-bold my-4">{children}</h6>,
+            [BLOCKS.HEADING_1]: (node, children) => <h1 className="text-2xl font-bold my-4 text-gray-800 dark:text-gray-300">{children}</h1>,
+            [BLOCKS.HEADING_2]: (node, children) => <h2 className="text-xl font-bold my-4 text-gray-800 dark:text-gray-300">{children}</h2>,
+            [BLOCKS.HEADING_3]: (node, children) => <h3 className="text-lg font-bold my-4 text-gray-800 dark:text-gray-300">{children}</h3>,
+            [BLOCKS.HEADING_4]: (node, children) => <h4 className="text-md font-bold my-4 text-gray-800 dark:text-gray-300">{children}</h4>,
+            [BLOCKS.HEADING_5]: (node, children) => <h5 className="text-sm font-bold my-4 text-gray-800 dark:text-gray-300">{children}</h5>,
+            [BLOCKS.HEADING_6]: (node, children) => <h6 className="text-xs font-bold my-4 text-gray-800 dark:text-gray-300">{children}</h6>,
             [INLINES.HYPERLINK]: (node, children) => (
                 <a href={node.data.uri} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">
                     {children}
