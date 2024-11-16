@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom'; // Import useNavigate
+import { Link, useLocation } from 'react-router-dom'; // Import useNavigate
 import SEO from '../components/react/SEO';
 import { createClient } from 'contentful';
 import { motion } from 'framer-motion';
 
 export default function Blogs() {
     const location = useLocation();
-    const navigate = useNavigate(); // Initialize the navigate function
     const [blogs, setBlogs] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
@@ -31,10 +30,6 @@ export default function Blogs() {
                 setLoading(false);
             });
     }, []);
-
-    const handleBlogClick = (slug) => {
-        navigate(`/blogs/${slug}`); // Navigate to the blog post detail page
-    };
 
     return (
         <div className='min-h-screen'>
@@ -72,30 +67,33 @@ export default function Blogs() {
                             </motion.h1>
                             {!loading && !error && blogs.map((blog) => (
                                 <motion.div
-                                    key={blog.sys.id}
-                                    className='mt-4 grid grid-cols-1 xl:grid-cols-8 items-start gap-4 shadow-lg p-2 rounded-lg cursor-pointer group'
-                                    onClick={() => handleBlogClick(blog.fields.slug)}
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     transition={{ ease: "easeInOut", duration: 1, delay: 0.8 }}>
-                                    <div className='xl:col-span-2'>
-                                        <img
-                                            className='w-full h-36 object-cover rounded-lg group-hover:scale-95 transition-all ease-in-out duration-300'
-                                            src={blog.fields.featuredImage?.fields.file.url}
-                                            alt={blog.fields.title}
-                                        />
-                                    </div>
-                                    <div className='xl:col-span-6 flex flex-col items-start gap-2'>
-                                        <h2 className='bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-2xl font-medium leading-none tracking-tighter text-transparent capitalize'>
-                                            {blog.fields.title}
-                                        </h2>
-                                        <p className='text-xs font-light tracking-tight text-gray-400'>
-                                            {blog.fields.shortDescription}
-                                        </p>
-                                        <p className='text-xs text-gray-500'>
-                                            Published on: {new Date(blog.fields.publishedDate).toLocaleDateString()}
-                                        </p>
-                                    </div>
+                                    <Link
+                                        to={`/blogs/${blog.fields.slug}`}
+                                        target='_self'
+                                        key={blog.sys.id}
+                                        className='mt-4 grid grid-cols-1 xl:grid-cols-8 items-start gap-4 shadow-lg p-2 rounded-lg cursor-pointer group'>
+                                        <div className='xl:col-span-2'>
+                                            <img
+                                                className='w-full h-36 object-cover rounded-lg group-hover:scale-95 transition-all ease-in-out duration-300'
+                                                src={blog.fields.featuredImage?.fields.file.url}
+                                                alt={blog.fields.title}
+                                            />
+                                        </div>
+                                        <div className='xl:col-span-6 flex flex-col items-start gap-2'>
+                                            <h2 className='bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-2xl font-medium leading-none tracking-tighter text-transparent capitalize'>
+                                                {blog.fields.title}
+                                            </h2>
+                                            <p className='text-xs font-light tracking-tight text-gray-400'>
+                                                {blog.fields.shortDescription}
+                                            </p>
+                                            <p className='text-xs text-gray-500'>
+                                                Published on: {new Date(blog.fields.publishedDate).toLocaleDateString()}
+                                            </p>
+                                        </div>
+                                    </Link>
                                 </motion.div>
                             ))}
                         </div>
