@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
     return (
-        <div className="mt-20 container mx-auto px-6 lg:px-0">
+        <div className="mt-20 container mx-auto px-6 xl:px-0">
             <div className="flex flex-col items-center justify-center gap-y-3 border-b border-dashed border-slate-400/20 py-10 lg:flex-row lg:items-center lg:justify-between">
                 <h3 className="max-w-sm text-balance text-center text-2xl font-bold text-neutral-900 dark:text-white md:text-start md:text-4xl">
                     Still have questions?

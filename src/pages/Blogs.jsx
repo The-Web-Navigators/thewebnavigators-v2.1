@@ -56,7 +56,7 @@ export default function Blogs() {
                             twitterImage="https://thewebnavigators.com/twitter-image.png"
                         />
                     )}
-                    <div className='mt-20 container mx-auto px-6 lg:px-0 grid grid-cols-1 xl:grid-cols-4'>
+                    <div className='mt-20 container mx-auto px-6 xl:px-0 grid grid-cols-1 xl:grid-cols-4'>
                         <div className='xl:col-span-3 min-h-screen'>
                             <motion.h1
                                 className='bg-gradient-to-br from-black to-black/40 dark:from-white dark:to-white/40 bg-clip-text text-5xl font-medium leading-none tracking-tighter text-transparent sm:text-5xl md:text-6xl lg:text-7xl capitalize'

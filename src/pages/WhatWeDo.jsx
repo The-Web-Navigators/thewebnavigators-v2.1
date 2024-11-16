@@ -30,7 +30,7 @@ export default function WhatWeDo() {
         />
       )}
 
-      <section className='mt-32 container mx-auto px-6 lg:px-0'>
+      <section className='mt-32 container mx-auto px-6 xl:px-0'>
         <div className='w-full min-h-max flex flex-col-reverse xl:flex-row gap-0 xl:gap-24 items-center justify-center'>
           <IconCloudComponent />
           <div className='w-full h-fit flex flex-col items-center lg:items-start'>
@@ -49,7 +49,7 @@ export default function WhatWeDo() {
               At The Web Navigators, we specialize in building - SaaS Platforms, Business Dashboards, Real-Time Chat Systems, AI Integrations, Custom Web Applications.
             </motion.h3>
             <motion.div
-              className="cursor-pointer py-5 px-6 w-fit flex items-center justify-center rounded-full bg-neutral-800 text-base font-semibold text-white transition ease-out hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 dark:bg-white dark:text-black dark:hover:ring-white dark:hover:ring-offset-black lg:text-base" onClick={() => { window.tidioChatApi.show(); window.tidioChatApi.open(); }}
+              className="cursor-pointer p-3 xl:py-5 xl:px-6 w-fit flex items-center justify-center rounded-full bg-neutral-800 text-base font-semibold text-white transition ease-out hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 dark:bg-white dark:text-black dark:hover:ring-white dark:hover:ring-offset-black lg:text-base" onClick={() => { window.tidioChatApi.show(); window.tidioChatApi.open(); }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ ease: "easeInOut", duration: 1, delay: 0.2 }}>
@@ -78,7 +78,7 @@ export default function WhatWeDo() {
               We craft scalable, high-performance web applications using the latest technologies like React, Tailwind, and beyond—bringing your ideas to life with clean, powerful code.
             </motion.h3>
             <motion.div
-              className="cursor-pointer py-5 px-6 w-fit flex items-center justify-center rounded-full bg-neutral-800 text-base font-semibold text-white transition ease-out hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 dark:bg-white dark:text-black dark:hover:ring-white dark:hover:ring-offset-black lg:text-base" onClick={() => { navigate('/portfolio') }}
+              className="cursor-pointer p-3 xl:py-5 xl:px-6 w-fit flex items-center justify-center rounded-full bg-neutral-800 text-base font-semibold text-white transition ease-out hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 dark:bg-white dark:text-black dark:hover:ring-white dark:hover:ring-offset-black lg:text-base" onClick={() => { navigate('/portfolio') }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ ease: "easeInOut", duration: 1, delay: 0.2 }}>
@@ -110,7 +110,7 @@ export default function WhatWeDo() {
               Deliver dynamic, real-time web applications that keep users engaged and connected—our expertise ensures your app is always responsive and lightning-fast.
             </motion.h3>
             <motion.div
-              className="cursor-pointer z-50 py-5 px-6 w-fit flex items-center justify-center rounded-full bg-neutral-800 text-base font-semibold text-white transition ease-out hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 dark:bg-white dark:text-black dark:hover:ring-white dark:hover:ring-offset-black lg:text-base" onClick={() => { window.tidioChatApi.show(); window.tidioChatApi.open(); }}
+              className="cursor-pointer z-50 p-3 xl:py-5 xl:px-6 w-fit flex items-center justify-center rounded-full bg-neutral-800 text-base font-semibold text-white transition ease-out hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 dark:bg-white dark:text-black dark:hover:ring-white dark:hover:ring-offset-black lg:text-base" onClick={() => { window.tidioChatApi.show(); window.tidioChatApi.open(); }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ ease: "easeInOut", duration: 1, delay: 0.2 }}>
@@ -144,7 +144,7 @@ export default function WhatWeDo() {
               Unlock seamless functionality across platforms with our robust API integrations. From simple to complex systems, we ensure everything works in perfect harmony.
             </motion.h3>
             <motion.div
-              className="cursor-pointer py-5 px-6 w-fit flex items-center justify-center rounded-full bg-neutral-800 text-base font-semibold text-white transition ease-out hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 dark:bg-white dark:text-black dark:hover:ring-white dark:hover:ring-offset-black lg:text-base" onClick={() => { window.tidioChatApi.show(); window.tidioChatApi.open(); }}
+              className="cursor-pointer p-3 xl:py-5 xl:px-6 w-fit flex items-center justify-center rounded-full bg-neutral-800 text-base font-semibold text-white transition ease-out hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 dark:bg-white dark:text-black dark:hover:ring-white dark:hover:ring-offset-black lg:text-base" onClick={() => { window.tidioChatApi.show(); window.tidioChatApi.open(); }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ ease: "easeInOut", duration: 1, delay: 0.2 }}>
@@ -189,7 +189,7 @@ export default function WhatWeDo() {
               We enhance your existing code, improving efficiency, scalability, and performance—ensuring your application is future-proof and ready for growth.
             </motion.h3>
             <motion.div
-              className="cursor-pointer py-5 px-6 w-fit flex items-center justify-center rounded-full bg-neutral-800 text-base font-semibold text-white transition ease-out hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 dark:bg-white dark:text-black dark:hover:ring-white dark:hover:ring-offset-black lg:text-base" onClick={() => { window.tidioChatApi.show(); window.tidioChatApi.open(); }}
+              className="cursor-pointer p-3 xl:py-5 xl:px-6 w-fit flex items-center justify-center rounded-full bg-neutral-800 text-base font-semibold text-white transition ease-out hover:ring-2 hover:ring-neutral-900 hover:ring-offset-2 dark:bg-white dark:text-black dark:hover:ring-white dark:hover:ring-offset-black lg:text-base" onClick={() => { window.tidioChatApi.show(); window.tidioChatApi.open(); }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ ease: "easeInOut", duration: 1, delay: 0.2 }}>
