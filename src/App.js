@@ -15,6 +15,7 @@ import { PortfolioProvider } from './contexts/PortfolioContext';
 import ProjectOverView from './pages/ProjectOverView';
 import Blogs from './pages/Blogs';
 import BlogDetail from './pages/BlogDetail';
+import FaceSwapTool from './pages/FaceSwapTool';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
               <Route path="/portfolio/:projectTitle" element={<ProjectOverView />} />
               <Route path="/blogs" element={<Blogs />} />
               <Route path="/blogs/:slug" element={<BlogDetail />} />
+              <Route path="/faceswap" element={<FaceSwapTool />} />
               {/* Add more routes as needed */}
             </Routes>
             <Footer />
